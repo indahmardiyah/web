@@ -1,0 +1,423 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; 
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  background-color: #000;
+}
+
+.hero{
+  height: 64vh;
+  width: 100%;
+  background-image: linear-gradient(to left, rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(bromo.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;  
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.logo{
+  position: absolute;
+  font-size: 33px;
+  color: #ffff;
+  font-weight: 700;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 28px;
+  margin-left: 250px;
+}
+
+span{
+  color: #f0bf6a;
+}
+
+.navbar{
+  font-family: 'Open Sans', sans-serif; /* Apply Open Sans font to navbar */
+  position: absolute;
+  display: flex;
+  margin-left: 820px;
+  margin-top: 44px;
+  list-style: none; /* Menghilangkan titik hitam */
+  padding: 0; /* Menghilangkan padding bawaan dari ul */
+  z-index: 2; /* pastikan z-index lebih tinggi dari elemen lain */
+}
+
+
+.navbar a{
+  font-weight: bold;
+  color: #fff ;
+  font-size: 1.1rem;
+  font-weight: 510;
+  margin: 15px 22px;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+
+.navbar a:hover{
+  color: #f0bf6a;
+}
+
+
+span{
+  color: #f0bf6a;
+}
+/*     END     */
+
+
+
+
+/*      Bagian Konten Utama     */
+
+header.sticky{
+  padding: 8px 17%;
+  background: transparent;
+  backdrop-filter: blur(35px);
+}
+
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 270px;
+}
+
+.content h3{
+  display: block;
+  width: 100%;
+  color: #ffffffb3;
+  font-size: 30px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.content h1{
+  width: 100%;
+  font-size: 76px;
+  color: white;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 25px;
+  margin-top: 6px;
+  margin-bottom: 20px; /* menempatkan teks di tengah horizontal */
+  text-shadow: 0 1px 5px rgba(255, 255, 255, 0.3); 
+}
+
+.content p{
+  width: 100%;
+  color: #fffffff3;
+  font-size: 18px;
+  line-height: 30px;
+  position: relative;
+  margin-top: 3px;
+  padding-top: 26vh;
+  z-index: 5;
+}
+
+.btn{
+  background: transparent;
+  text-decoration: none;
+  border: 2px solid #ffffffb3;
+  padding: 14px 30px;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 7px;
+  z-index: 1;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px rgb(255, 255, 255); 
+  transition: all  .50s ease;
+
+}
+.btn:hover{
+  background: #5b5b5b;
+  transform: translateY(5px);
+  border: 2px solid #f5f5f5;
+  cursor: pointer;
+}
+/*     END     */
+
+
+:root{
+  --text-color: #fff;
+  --bg-color: #000;
+  --main-color: #f0bf6a;
+
+  --h1-font: 6rem;
+  --h2-font: 3rem;
+  --p-font: 1rem;
+}
+
+/*     Bagian Konten Wisata     */
+.center-text{
+  text-align: center;
+  color: #fff;
+  margin-bottom: 5px
+}
+
+.center-text p{
+  font-size: 20px;
+  color: #f5f5f5c3;
+  margin-top: 25px;
+}
+
+.center-text h2{
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+
+  margin-top: 130px
+}
+/*     END     */
+
+
+/*     FOOTER     */
+.Footer{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 50px;
+  padding: 30px 0;
+  background-color: #000;
+  margin-left: 140px;
+  margin-bottom: 10px;
+}
+
+.footer-box{
+  flex: 1 1 300px; /* Set width and allow flex-grow and flex-shrink */
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-box h3{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer-box a{
+  color: #979797;
+  margin-bottom: 0.8rem;
+  transition: all .50s ease;
+  text-decoration: none; /* Remove underline */
+}
+
+.footer-box a:hover{
+  transform: translateX(-5px);
+  color: #fff;
+}
+
+.social a{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 45px;
+  background: #202020;
+  color: var(--text-color);
+  font-size: 20px;
+  border-radius: 50%;
+  margin-right: 8px;
+  transition: transform 0.6s;
+}
+
+.social a:hover{
+  background: #fff;
+  color: #68676769;
+  transform: translateX(-4px);
+}
+
+.copyright p{
+  text-align: center;
+  padding: 20px;
+  color: #979797;
+  font-size: 15px;
+}
+/*     END     */
+
+
+
+
+/*     Artikel Wisata BUTTON DETAILS     */
+.btn-detail{
+  background: transparent;
+  border: 2px solid #ffffffb3;
+  box-shadow: 0 0 10px rgb(255, 255, 255); 
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 7px;
+  z-index: 1;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-left: 200px;
+}
+
+.btn-detail:hover{
+  background: #5b5b5b;
+  border: 2px solid #ffffff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+/*     END     */
+
+
+/*     Artikel wisata        */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif; 
+  box-sizing: border-box;
+}
+
+
+/* .test-card-body p{
+	margin: 10px 0px 15px;
+	font-size: 15px;
+	line-height: 1.5;
+	color: #a0a4b1;
+} */
+.ratings{
+  position: absolute;
+  left: 23px;
+	margin-top: 105%;
+  font-size: 12px;
+	color: #ffd000;
+}
+
+.teks h1{
+  margin-left: 23px;
+  margin-top: 240px;
+  position: absolute;
+  font-size: 21px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.teks p{
+  margin-left: 24px;
+  margin-top: 217px;
+  font-size: 17px;
+  position: absolute;
+  font-weight: 500;
+  color: #fff;
+}
+
+.teks-kawah h1{
+  margin-left: 23px;
+  margin-top: 240px;
+  position: absolute;
+  font-size: 21px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.teks-kawah p{
+  margin-left: 24px;
+  margin-top: 217px;
+  font-size: 17px;
+  position: absolute;
+  font-weight: 500;
+  color: #fff;
+}
+
+.wrapper{
+  padding: 10px 10%;
+}
+#card-area{
+  padding: 50px 0;
+}
+.box-area{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.box {
+border-radius: 10px;
+position: relative;
+overflow: hidden;
+box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+}
+.box img{
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+.overlay {
+width: 100%;
+height: 0;
+background: linear-gradient(transparent,#1c1c1c 58%);
+border-radius: 10px;
+position: absolute;
+left: 0;
+bottom: 0;
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 0 40px;
+text-align: center;
+font-size: 12px;
+transition: height 0.5s;
+}
+
+.overlay .rating {
+  display: inline-block;
+  color: #ffd000;
+  font-size: 15px;
+  margin: 0px 5px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.overlay h3 {
+color: #fff;
+font-weight: 800;
+margin-bottom: 5px;
+margin-top: 70%;
+font-family: 'Bebas Neue', sans-serif;
+font-size: 20px;
+letter-spacing: 2px;
+}
+
+.overlay p{
+  color: #fff;
+}
+
+.overlay a {
+margin-top: 9px;
+color: #262626;
+text-decoration: none;
+font-size: 15px;
+background: #fff;
+border-radius: 50px;
+text-align: center;
+padding: 5px 15px;
+margin-bottom: 30px;
+}
+.box:hover img{
+  transform: scale(1.1);
+}
+.box:hover .overlay{
+  height: 100%;
+}
+

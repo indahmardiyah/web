@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Informasi Umum</title>
+	<link rel="stylesheet" type="text/css" href="informasi umum style.css">
+
+ <!---------------------------- Boxicons Link ------------------------------>
+ <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+ <!---------------------------- Remixicon Link ------------------------------>
+ <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
+ <!---------------------------- Google Fonts Link ------------------------------>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+ <!---------------------------- Font Awesome Icons Link ------------------------------>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+ <!------------------------------ Owl Carousel Links ------------------------------>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+
+ <style>
+  .page-transition {
+    animation: fadeOut 0.5s ease-in-out forwards;
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  body, h1, h2, h3, h4, h5, h6, p, a, span {
+    font-family: 'Open Sans', sans-serif;
+  }
+</style>
+
+</head> 
+
+<body>
+
+  <!---------------------- HEAD --------------------->
+  <div class="hero">
+
+    <!--------------------- NAVBAR SECTION --------------------->
+    
+    <header>
+      <!-- <a href="#" class="logo">Tou<span>rs.</span></a> -->
+      <a href="#" class="logo">
+        <img src="logo.png" alt="Logo" />
+    </a>
+          <ul class="navbar">
+          <li><a href="halaman.html" id="home">Beranda</a></li>
+          <li><a href="halaman.html" id="about">Tentang</a></li>
+          <li><a href="informasi umum.html" id="informasi">Informasi Umum</a></li>
+          <li class="login"><a href="#" id="loginButton">Masuk</a></li>
+      </ul>
+  </header>
+  </div>
+
+
+
+ <!-- Form Login Modal -->
+<div class="modal" id="loginModal">
+  <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <div class="tab">
+          <!--
+          <button class="tablinks active" onclick="openForm(event, 'LoginForm')">Login</button>
+          <button class="tablinks" onclick="openForm(event, 'RegisterForm')">Register</button>
+          -->
+      </div>
+      <div id="LoginForm" class="form-container active">
+          <div class="container-login">
+              <div class="main-box login">
+                  <h1>Masuk</h1>
+                  <form action="">
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-envelope"></i></span>
+                          <input type="email" required>
+                          <label>Email</label>
+                      </div>
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+                          <input type="password" required>
+                          <label>Kata sandi</label>
+                      </div>
+                      <div class="check">
+                          <label><input type="checkbox">Ingatkan saya!</label>
+                          <span class="forgot-password"><a href="#">Lupa kata sandi?</a></span>
+                      </div>
+                      <button type="submit" class="main-btn-login">Masuk</button>
+                      <div class="register">
+                          <p>Tidak punya akun?<a href="#" class="register-link"> Daftar</a></p>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+      <div id="RegisterForm" class="form-container">
+          <div class="container-login">
+              <div class="main-box register">
+                  <h1>Daftar</h1>
+                  <form action="">
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-user"></i></span>
+                          <input type="text" required>
+                          <label>Nama pengguna</label>
+                      </div>
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-envelope"></i></span>
+                          <input type="email" required>
+                          <label>Email</label>
+                      </div>
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+                          <input type="password" required>
+                          <label>Kata sandi</label>
+                      </div>
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+                          <input type="password" required>
+                          <label>Konfirmasi Kata sandi</label>
+                      </div>
+                      <div class="check">
+                          <label><input type="checkbox">Saya menerima semua syarat & ketentuan</label>
+                      </div>
+                      <button type="submit" class="main-btn">Daftar</button>
+                      <div class="register">
+                          <p>Sudah punya akun?<a href="#" class="login-link"> Masuk</a></p>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+      <!--------------------- HEAD SECTION --------------------->
+    <div class="content">
+      <!-- <h3>Jelajahi Indonesia</h3> -->
+      <h1>Informasi Umum</h1>
+      <!-- <p>cari disini</p> -->
+    </div>
+
+
+    <!-- SEARCH -->
+    <!-- <div class="search-bar">
+      <div class="search-item">
+          <i class="fas fa-calendar-alt icon"></i>
+          <select>
+            <option value="" disabled selected hidden>Pilih Provinsi</option>
+            <option value="1">1 Guest</option>
+            <option value="2">2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4">4 Guests</option>
+        </select>
+      </div>
+      <div class="separator"></div>
+      <div class="search-item">
+          <i class="fas fa-wallet icon"></i>
+          <select>
+            <option value="" disabled selected hidden>Pilih Kota</option>
+            <option value="kota">1 Guest</option>
+            <option value="kota">2 Guests</option>
+            <option value="kota">3 Guests</option>
+            <option value="kota">4 Guests</option>
+        </select>
+      </div>
+      <div class="separator"></div>
+      <div class="search-item">
+          <i class="fas fa-user-friends icon"></i>
+          <select>
+              <option value="" disabled selected hidden>Guest</option>
+              <option value="1">1 Guest</option>
+              <option value="2">2 Guests</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4 Guests</option>
+          </select>
+      </div>
+      <button class="search-button" id="searchButton">Search</button>
+  </div> -->
+
+
+
+
+    <!-------- Artikel Wisata ---------------->
+
+  <div class="container">
+    <div class="center-text2">
+        <h2>Kenali Indonesia</h2>
+        <!-- <p>Baragam Bahasa, Budaya, dan keindahan alam</p> -->
+        <!-- <h2>Jelajahi Indonesia berdasarkan Wilayah</h2> -->
+    </div>
+    
+    <div id="card-area">
+      <div class="wrapper">
+        <div class="box-area">
+          <div class="box">
+            <div class="teks">
+            <h1>Jenis <br> Visa Indonesia</h1>
+            </div>
+            <img alt="" src="visa.jpg">
+            <div class="overlay">
+              <h3>Visa</h3>
+              <p>Visa Indonesia adalah izin bagi warga asing untuk masuk dan tinggal.</p>
+              <a href="visa.html">Details</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="teks">
+              <h1>Sejarah Indonesia</h1>
+              </div>
+            <img alt="" src="history.jpg">
+            <div class="overlay">
+              <h3>Sejarah</h3>
+              <p>Kerajaan, kolonialisme, kemerdekaan 1945 & negara modern.</p>
+              <a href="sejarah.html">Details</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="teks-2">
+              <h1>Menuju <br>Indonesia</h1>
+              </div>
+            <img alt="" src="tour.png">
+            <div class="overlay">
+              <h3>Indonesia</h3>
+              <p>Panduan Perjalanan ke Indonesia.</p>
+              <a href="Menuju Indonesia.html">Details</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="teks-3">
+              <h1>Bahasa</h1>
+              </div>
+            <img alt="" src="language.png">
+            <div class="overlay">
+              <h3>Bahasa</h3>
+              <p>Bahasa Indonesia, menggunakan <br>alfabet Latin.</p>
+              <a href="bahasa.html">Details</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="teks-4">
+              <h1>Orang <br>& Budaya</h1>
+              </div>
+            <img alt="" src="tarian.png">
+            <div class="overlay">
+              <h3>Orang <br>& Budaya</h3>
+              <p>Indonesia memiliki beragam etnis, budaya, dan agama.</p>
+              <a href="#">Details</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="teks">
+              <h1>WiFi & Konektivitas</h1>
+              </div>
+            <img alt="" src="wifi.png">
+            <div class="overlay">
+              <h3>Jaringan</h3> 
+              <p>WiFi dan 4G meluas di kota besar Indonesia; akses di pedesaan masih terbatas.</p>
+              <a href="jaringan.html">Details</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="teks">
+              <h1>Colokan & Listrik</h1>
+              </div>
+            <img alt="" src="plug.png">
+            <div class="overlay">
+              <h3>Colokan & Listrik</h3>
+              <p>Colokan listrik yang umum digunakan adalah tipe C dan F dengan tegangan 220V dan frekuensi 50Hz.</p>
+              <a href="plugs.html">Details</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="teks-4">
+              <h1>Panggilan <br>Darurat</h1>
+              </div>
+            <img alt="" src="112.jpg">
+            <div class="overlay">
+              <h3>Panggilan Darurat</h3>
+              <p>Dapat dihubungi untuk keadaan darurat darat, udara, atau laut.</p>
+              <a href="panggilan darurat.html">Details</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="teks">
+              <h1>Perbedaan waktu</h1>
+              </div>
+            <img alt="" src="time.jpg">
+            <div class="overlay">
+              <h3>Perbedaan waktu</h3>
+              <p>Waktu di Indonesia memiliki 3 zona: WIB, WITA, dan WIT, masing-masing berbeda sekitar satu jam.</p>
+              <a href="perbedaan waktu.html">Details</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="teks-4">
+              <h1>Cuaca, Iklim <br> & Musim</h1>
+              </div>
+            <img alt="" src="weather.jpg">
+            <div class="overlay">
+              <h3>Cuaca</h3>
+              <p>Indonesia adalah iklim tropis dengan musim hujan dan kemarau.</p>
+              <a href="cuaca.html">Details</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="teks-4">
+              <h1>Kartu Kredit</h1>
+              </div>
+            <img alt="" src="kredit.png">
+            <div class="overlay">
+              <h3>Kartu Kredit</h3>
+              <p>Alat pembayaran yang memungkinkan transaksi belanja dengan kredit dari bank.</p>
+              <a href="Kartu Kredit.html">Details</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="teks-4">
+              <h1>Mata uang</h1>
+              </div>
+            <img alt="" src="rupiah.png">
+            <div class="overlay">
+              <h3>Mata uang</h3>
+              <p>Mata uang di Indonesia adalah Rupiah (IDR), dengan simbol "Rp".</p>
+              <a href="Mata uang.html">Details</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="teks">
+              <h1>Hukum Indonesia</h1>
+              </div>
+            <img alt="" src="law.jpg">
+            <div class="overlay">
+              <h3>Hukum</h3>
+              <p>Hukum di Indonesia mengatur perilaku masyarakat dengan Mahkamah Agung sebagai otoritas tertinggi.</p>
+              <a href="hukum.html">Details</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="teks-4">
+              <h1>Jam Kerja <br> & Hari Libur</h1>
+              </div>
+            <img alt="" src="weekend.png">
+            <div class="overlay">
+              <h3>Jam Kerja &Hari Libur</h3>
+              <p>Jam kerja Senin-Jumat, 8 pagi-5/6 sore. Hari libur nasional: 17 Agustus & hari besar agama.</p>
+              <a href="#">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+  <!----------------------------- CULTURE SECTION ----------------------------->
+  <!-- <section class="Culture">
+    <div class="Culture-text">
+      <h5>INDONESIA CULTURE</h5>
+
+      <h2>Our culture here is very friendly to people</h2>
+      <p>Dikenal karena keramahan, kesopanan, dan sikap ramahnya, budaya Indonesia membanggakan tradisi yang mewarisi nilai-nilai tersebut dari generasi ke generasi.</p>
+      <a href="https://en.wikipedia.org/wiki/Culture_of_Indonesia" class="btn">Selengkapnya</a>
+
+    </div>
+    <div class="Culture-img">
+      <img src="culture.jpg">
+    </div>
+  </section> -->
+
+  <!----------------------------- FOOTER SECTION ----------------------------->
+  <section class="Footer">
+    <div class="footer-box">
+      <h3>Services</h3>
+      <a href="#">Email Marketing</a>
+      <a href="">Campaigns</a>
+      <a href="#">Brandings</a>
+      <a href="#">Offline</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Services</h3>
+      <a href="#">Our story</a>
+      <a href="">Benefits</a>
+      <a href="#">Team</a>
+      <a href="#">Careers</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Services</h3>
+      <a href="#">Help</a>
+      <a href="">FAQ</a>
+      <a href="#">Contact us</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Social</h3>
+      <div class="Social">
+        <a href="#"><i class="ri-instagram-fill"></i></a>
+        <a href="#"><i class="ri-twitter-fill"></i></a>
+        <a href="#"><i class="ri-facebook-fill"></i></a>
+        <a href="#"><i class="ri-Github-fill"></i></a>
+        <a href="#"><i class="ri-Snpachat-fill"></i></a>
+        <a href="#"><i class="ri-WhatsApp-fill"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!---------------------------- COPYRIGHT SECTION ----------------------------->
+  <!-- <div class="copyright">
+    <p>Copyright 2024 By Tours</p>
+  </div> -->
+
+    <!------------------------------- JAVASCRIPT --------------------------------->
+
+  <!------------------------------- JQuery Link ----------------------------------------->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+  <!---------------------------- Testimonial js Link ------------------------------------>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <!-------------------- Js NAVBAR ---------------->
+  <!-- <script>
+      const header = document.querySelector("header");
+  window.addEventListener("scroll", function() {
+  header.classList.toggle("sticky", window.scrollY > 60)
+  });
+  </script> -->
+
+  <!-------------------- Js untuk Carousel Testimoni dengan Owl Carousel ---------------->
+  
+  <!-- <script>
+    $(document).ready(function(){
+      $('.testimonials-container').owlCarousel({
+        loop:true,
+        autoplay:true,
+        autoplayTimeout:6000,
+        margin:10,
+        nav:true,
+        navText:["<i class='fa-solid fa-arrow-left'></i>",
+                "<i class='fa-solid fa-arrow-right'></i>"],
+        responsive:{
+          0:{
+            items:1,
+            nav:false
+          },
+          600:{
+            items:1,
+            nav:true
+          },
+          768:{
+            items:2
+          },
+        }
+      });
+    });
+  </script>  -->
+
+  <!---- Js Pergantian Halaman dengan Animasi saat Mengklik Gambar ---->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const boxBromo = document.querySelector(".box:nth-child(1)"); 
+      const boxRajaAmpat = document.querySelector(".box:nth-child(2)");
+
+      //              Bromo              //
+      // Event listener untuk gambar Bromo
+      boxBromo.addEventListener("click", function() {
+        // Menambahkan kelas animasi saat berpindah halaman
+        document.body.classList.add('page-transition');
+
+        // Mengarahkan pengguna ke halaman Bromo.html setelah animasi selesai
+        setTimeout(function() {
+          window.location.href = "Bromo.html";
+        }, 900); // durasi animasi fadeOut
+      });
+
+      //              RAJA AMPAT              //
+      // Event listener untuk gambar Raja Ampat
+      boxRajaAmpat.addEventListener("click", function() {
+        // Menambahkan kelas animasi saat berpindah halaman
+        document.body.classList.add('page-transition');
+
+        // Mengarahkan pengguna ke halaman Raja Ampat.html setelah animasi selesai
+        setTimeout(function() {
+          window.location.href = "Raja Ampat.html";
+        }, 500); // durasi animasi fadeOut
+      });
+    });
+  </script>
+
+  <!-------------- Link JS Swiper ---------------->
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+
+
+  <!-------------- Animasi Halaman ---------------->
+  <!-- <script src="assets/js/scrollreveal.min.js"></script>
+  <script>
+    const sr = ScrollReveal({
+      origin: 'top',
+      distance:'60px',
+      duration: 3000,
+      delay: 400,
+    });
+
+    sr.reveal(`.Footer`,{delay: 600, distance: '100px', interval: 100});
+    sr.reveal(`.tour`, {origin: 'bottom',});
+    sr.reveal(`.content`, {origin: 'bottom',});
+    sr.reveal(`.card-content`, {origin: 'bottom',});
+    sr.reveal(`.heading`, {origin: 'bottom',});
+    sr.reveal(`.search-container`, {origin: 'bottom',});
+    sr.reveal(`.holiday-text`, {origin: 'right'});
+    sr.reveal(`.holiday-img`, {origin: 'left'});
+    sr.reveal(`.Culture-text`, {origin: 'left'});
+    sr.reveal(`.Culture-img`, {origin: 'right'});
+  </script> -->
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      const links = document.querySelectorAll(".navbar a");
+  
+      // Tambahkan event listener untuk setiap link navbar
+      links.forEach(link => {
+          link.addEventListener("click", function (event) {
+              // Menghapus kelas 'active' dari semua link navbar
+              links.forEach(link => {
+                  link.classList.remove("active");
+              });
+  
+              // Menambahkan kelas 'active' ke link yang diklik
+              this.classList.add("active");
+          });
+      });
+  
+      // Tambahkan kelas 'active' ke link sesuai dengan halaman yang sedang dibuka
+      const currentLocation = window.location.href;
+      links.forEach(link => {
+          if (link.href === currentLocation) {
+              link.classList.add("active");
+          }
+      });
+  });
+      </script>
+
+
+
+
+<!--     BACKGROUND VIDEO -->
+<script>
+  // Function to play the video
+  function playVideo() {
+      var video = document.getElementById("hero-video");
+      video.play();
+  }
+
+  // Call the function after the page loads
+  window.onload = playVideo;
+</script>
+
+<script>
+  // Kode JavaScript untuk membuat header tetap
+  const header = document.querySelector("header");
+  window.addEventListener("scroll", function() {
+    header.classList.toggle("sticky", window.scrollY > 60)
+  });
+</script>
+
+
+
+<!--           LOGIN         -->
+<script>
+  document.getElementById('loginButton').onclick = function() {
+  document.getElementById('loginModal').style.display = "block";
+  document.getElementById('LoginForm').classList.add('active');
+  document.getElementById('RegisterForm').classList.remove('active');
+};
+
+document.getElementById('closeModal').onclick = function() {
+  document.getElementById('loginModal').style.display = "none";
+};
+
+window.onclick = function(event) {
+  if (event.target == document.getElementById('loginModal')) {
+    document.getElementById('loginModal').style.display = "none";
+  }
+};
+
+document.querySelector('.register-link').addEventListener('click', function(event) {
+  event.preventDefault();
+  document.getElementById('LoginForm').classList.remove('active');
+  document.getElementById('RegisterForm').classList.add('active');
+});
+
+document.querySelector('.login-link').addEventListener('click', function(event) {
+  event.preventDefault();
+  document.getElementById('RegisterForm').classList.remove('active');
+  document.getElementById('LoginForm').classList.add('active');
+});
+</script>
+
+
+
+
+
+
+
+<!-- home 2  -->
+<script>
+  const cardsData = {
+      popular: [
+          { title: 'Amalfi Coast', location: 'Amalfi, Italy', rating: 4.9, imgSrc: 'bromo bg.png' },
+          { title: 'Taj Mahal', location: 'Agra, India', rating: 4.9, imgSrc: 'rumede2.png' },
+          { title: 'Tanah Gajah', location: 'Bali, Indonesia', rating: 4.9, imgSrc: 'rumede2.png' },
+          { title: 'Osaka Castle', location: 'Osaka, Japan', rating: 4.9, imgSrc: 'raja ampat-bg.png' },
+          { title: 'Cape Reinga', location: 'Northland, New Zealand', rating: 4.9, imgSrc: 'raja ampat-bg.png' },
+          { title: 'Sorrento', location: 'Amalfi, Italy', rating: 4.9, imgSrc: 'raja ampat-bg.png' },
+          { title: 'Destination 7', location: 'Location 7', rating: 4.9, imgSrc: 'Piaynemo Raja Ampat.jpg' },
+          { title: 'Destination 8', location: 'Location 8', rating: 4.9, imgSrc: 'rumede2.png' }
+      ],
+      islands: [
+          { title: 'Osaka Castle', location: 'Osaka, Japan', rating: 4.9, imgSrc: 'raja ampat-bg.png' },
+          // Tambahkan data destinasi pulau lainnya di sini
+      ],
+      surfing: [
+          { title: 'Bondi Beach', location: 'Sydney, Australia', rating: 4.8, imgSrc: 'https://example.com/bondi_beach.jpg' },
+          // Tambahkan data destinasi surfing lainnya di sini
+      ],
+      nation_parks: [
+          { title: 'Yellowstone', location: 'Wyoming, USA', rating: 4.9, imgSrc: 'https://example.com/yellowstone.jpg' },
+          // Tambahkan data taman nasional lainnya di sini
+      ],
+      lake: [
+          { title: 'Lake Tahoe', location: 'California, USA', rating: 4.8, imgSrc: 'https://example.com/lake_tahoe.jpg' },
+          // Tambahkan data danau lainnya di sini
+      ],
+      beach: [
+          { title: 'Maui Beach', location: 'Hawaii, USA', rating: 4.9, imgSrc: 'https://example.com/maui_beach.jpg' },
+          // Tambahkan data pantai lainnya di sini
+      ],
+      camp: [
+          { title: 'Tanah Gajah', location: 'Bali, Indonesia', rating: 4.9, imgSrc: 'rumede2.png' },
+          // Tambahkan data lokasi kemah lainnya di sini
+      ],
+  };
+
+  let currentIndex = 0;
+  let hiddenCards = [];
+
+  function showCategory(category) {
+      const cardsContainer = document.getElementById('cards');
+      cardsContainer.innerHTML = '';
+
+      const categoryCards = cardsData[category];
+      categoryCards.forEach(card => {
+          const cardElement = document.createElement('div');
+          cardElement.className = 'card';
+          cardElement.innerHTML = `
+              <img src="${card.imgSrc}" alt="${card.title}">
+              <div class="card-content">
+                  <div class="rating-badge">
+                      <i class="fas fa-star"></i>
+                      <span>${card.rating}</span>
+                  </div>
+                  <h3>${card.title}</h3>
+                  <p class="location">
+                      <i class="fas fa-map-marker-alt location-icon"></i>
+                      ${card.location}
+                  </p>
+                  <button class="details-btn">Details</button>
+              </div>
+          `;
+          cardsContainer.appendChild(cardElement);
+      });
+
+      // Mengatur tombol "Show More"
+      currentIndex = 4;
+      hiddenCards = Array.from(cardsContainer.querySelectorAll('.card'));
+      hiddenCards.forEach((card, index) => {
+          if (index >= 4) {
+              card.classList.add('hidden');
+          }
+      });
+
+      if (hiddenCards.length > 4) {
+          document.getElementById('show-more-btn').style.display = 'block';
+      } else {
+          document.getElementById('show-more-btn').style.display = 'none';
+      }
+
+      // Update active button
+      document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelector(`.filter-btn[onclick="showCategory('${category}')"]`).classList.add('active');
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+      const showMoreBtn = document.getElementById("show-more-btn");
+
+      showMoreBtn.addEventListener("click", () => {
+          for (let i = 0; i < 4 && currentIndex < hiddenCards.length; i++, currentIndex++) {
+              hiddenCards[currentIndex].classList.remove("hidden");
+          }
+
+          if (currentIndex >= hiddenCards.length) {
+              showMoreBtn.style.display = 'none';
+          }
+      });
+
+      // Tampilkan kategori default
+      showCategory('popular');
+  });
+</script>
+
+
+
+<!-- popular -->
+<script>
+  function toggleHeart(element) {
+const icon = element.querySelector('i');
+if (icon.classList.contains('far')) {
+  icon.classList.remove('far');
+  icon.classList.add('fas');
+} else {
+  icon.classList.remove('fas');
+  icon.classList.add('far');
+}
+}
+
+</script>
+</body>
+</html>

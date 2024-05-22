@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bahasa</title>
+	<link rel="stylesheet" type="text/css" href="bahasa style.css">
+
+ <!---------------------------- Boxicons Link ------------------------------>
+ <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+ <!---------------------------- Remixicon Link ------------------------------>
+ <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
+ <!---------------------------- Google Fonts Link ------------------------------>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+ <!---------------------------- Font Awesome Icons Link ------------------------------>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+ <!------------------------------ Owl Carousel Links ------------------------------>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+
+ <style>
+  .page-transition {
+    animation: fadeOut 0.5s ease-in-out forwards;
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  body, h1, h2, h3, h4, h5, h6, p, a, span {
+    font-family: 'Open Sans', sans-serif;
+  }
+</style>
+
+</head> 
+
+<body>
+
+  <!---------------------- HEAD --------------------->
+  <div class="hero">
+
+    <!--------------------- NAVBAR SECTION --------------------->
+    
+    <header>
+      <!-- <a href="#" class="logo">Tou<span>rs.</span></a> -->
+      <a href="#" class="logo">
+        <img src="logo.png" alt="Logo" />
+    </a>
+          <ul class="navbar">
+          <li><a href="halaman.html" id="home">Beranda</a></li>
+          <li><a href="halaman.html" id="about">Tentang</a></li>
+          <li><a href="informasi umum.html" id="informasi">Informasi Umum</a></li>
+          <li class="login"><a href="#" id="loginButton">Masuk</a></li>
+      </ul>
+  </header>
+  </div>
+
+
+
+ <!-- Form Login Modal -->
+<div class="modal" id="loginModal">
+  <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <div class="tab">
+          <!--
+          <button class="tablinks active" onclick="openForm(event, 'LoginForm')">Login</button>
+          <button class="tablinks" onclick="openForm(event, 'RegisterForm')">Register</button>
+          -->
+      </div>
+      <div id="LoginForm" class="form-container active">
+          <div class="container-login">
+              <div class="main-box login">
+                  <h1>Masuk</h1>
+                  <form action="">
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-envelope"></i></span>
+                          <input type="email" required>
+                          <label>Email</label>
+                      </div>
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+                          <input type="password" required>
+                          <label>Kata sandi</label>
+                      </div>
+                      <div class="check">
+                          <label><input type="checkbox">Ingatkan saya!</label>
+                          <span class="forgot-password"><a href="#">Lupa kata sandi?</a></span>
+                      </div>
+                      <button type="submit" class="main-btn-login">Masuk</button>
+                      <div class="register">
+                          <p>Tidak punya akun?<a href="#" class="register-link"> Daftar</a></p>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+      <div id="RegisterForm" class="form-container">
+          <div class="container-login">
+              <div class="main-box register">
+                  <h1>Daftar</h1>
+                  <form action="">
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-user"></i></span>
+                          <input type="text" required>
+                          <label>Nama pengguna</label>
+                      </div>
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-envelope"></i></span>
+                          <input type="email" required>
+                          <label>Email</label>
+                      </div>
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+                          <input type="password" required>
+                          <label>Kata sandi</label>
+                      </div>
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+                          <input type="password" required>
+                          <label>Konfirmasi Kata sandi</label>
+                      </div>
+                      <div class="check">
+                          <label><input type="checkbox">Saya menerima semua syarat & ketentuan</label>
+                      </div>
+                      <button type="submit" class="main-btn">Daftar</button>
+                      <div class="register">
+                          <p>Sudah punya akun?<a href="#" class="login-link"> Masuk</a></p>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+      <!--------------------- HEAD SECTION --------------------->
+
+
+
+
+
+    <!-------- Artikel Wisata ---------------->
+    <div class="center-text2">
+      <h2>Bahasa</h2>
+        <span class="line"></span>
+    </div>
+    
+
+
+
+      <!-- <h1>Bangkok</h1> -->
+      <div class="container-teks">
+      <p class="intro">
+
+        Bahasa adalah sistem komunikasi yang digunakan oleh manusia untuk berinteraksi, menyampaikan informasi, dan mengekspresikan pikiran dan perasaan. Di Indonesia, bahasa memiliki peran yang sangat penting karena negara ini memiliki beragam suku, budaya, dan bahasa daerah.      
+        <!-- <a href="#" class="read-more">Read More</a> -->
+      <div class="info-section">
+        <!-- <div class="icon-container"> -->
+            <!-- <i class="fas fa-1 icon"></i> -->
+        </div>
+        <div>
+        <div class="text-container1">
+            <h1>Apa bahasa resmi dan nasional yang digunakan di Indonesia?</h1>
+            <p>
+              Bahasa resmi dan nasional Indonesia adalah Bahasa Indonesia. Bahasa ini digunakan dalam pemerintahan, pendidikan, media massa, dan komunikasi resmi lainnya di seluruh Indonesia.            
+            </p>
+        </div>
+        <div class="text-container1">
+          <h1>Berapa banyak bahasa daerah yang ada di Indonesia?</h1>
+          <p>
+            Indonesia memiliki lebih dari 700 bahasa daerah yang digunakan oleh berbagai suku bangsa di seluruh kepulauan Indonesia.      
+          </div>
+      <div class="text-container1">
+        <h1>Mengapa Bahasa Indonesia penting dalam konteks negara yang memiliki banyak bahasa daerah?</h1>
+        <p>
+          Bahasa Indonesia penting karena berfungsi sebagai bahasa pemersatu di tengah keberagaman bahasa dan budaya. Ini memungkinkan komunikasi yang efektif dan efisien di seluruh wilayah Indonesia yang terdiri dari berbagai suku dan budaya.    
+        </div>
+        <div class="text-container1">
+    <h1>Bagaimana peran bahasa dalam mencerminkan kekayaan budaya Indonesia?</h1>
+    <p>
+      Bahasa mencerminkan kekayaan budaya Indonesia dengan mengekspresikan tradisi, sejarah, dan identitas dari berbagai suku bangsa. Keberagaman bahasa menunjukkan keragaman adat istiadat, cerita rakyat, dan cara hidup yang unik di setiap daerah.
+    </p>
+</div>
+    <div class="text-container1">
+      <h1>Apakah orang Indonesia berbicara atau mengerti bahasa Inggris?</h1>
+      <p>
+        Secara umum, bahasa Inggris tidak digunakan secara luas di Indonesia. Namun, di kota-kota besar dan daerah tujuan wisata seperti Bali, Batam, Jakarta, Bandung, Surabaya, dan Yogyakarta, banyak orang memiliki kemampuan dasar hingga menengah dalam berbahasa Inggris. Di lokasi-lokasi ini, terutama di sektor pariwisata, perhotelan, dan layanan maskapai penerbangan, staf biasanya dapat berkomunikasi dalam bahasa Inggris. Hal ini memudahkan wisatawan asing untuk berinteraksi dan mendapatkan layanan yang mereka butuhkan.
+      </p>
+  </div>
+  
+  <div class="text-container2">
+    <h1>Apa sajakah frasa umum dalam Bahasa Indonesia yang dapat membantu saya?</h1>
+    <div class="bahasa-section">
+      <p>
+        <strong>Berikut adalah beberapa frasa umum dalam Bahasa Indonesia yang dapat membantu Anda dalam percakapan sehari-hari. Pengucapan bahasa Indonesia relatif mudah dikuasai karena setiap huruf selalu mewakili bunyi yang sama dan sebagian besar huruf diucapkan sama seperti dalam bahasa Inggris:</strong></p>
+        <h3>1. Salam dan Sapaan:</h3>
+        <ul>
+            <li>- Selamat Pagi = Good Morning</li>
+            <li>- Selamat Siang = Good Afternoon</li>
+            <li>- Selamat Sore = Good Evening (used from late afternoon until sunset)</li>
+            <li>- Selamat Malam = Good Night</li>
+            <li>- Selamat Datang = Welcome</li>
+            <li>- Selamat Jalan = Goodbye (used when someone is leaving)</li>
+            <li>- Sampai Jumpa = See You Later</li>
+        </ul>
+        <h3>2. Menanyakan Kabar dan Menjawab:</h3>
+        <ul>
+            <li>- Apa Kabar? = How are you?</li>
+            <li>- Saya Baik = I am good</li>
+            <li>- Bagaimana Kabar Anda? = How are you doing?</li>
+            <li>- Kabar Baik = Good news (response to How are you?)</li>
+        </ul>
+        <h3>3. Meminta Maaf dan Izin:</h3>
+        <ul>
+            <li>- Permisi = Excuse me</li>
+            <li>- Maaf = Sorry</li>
+            <li>- Boleh saya masuk? = May I come in?</li>
+        </ul>
+        <h3>4. Meminta Bantuan dan Berterima Kasih:</h3>
+        <ul>
+            <li>- Tolong = Help</li>
+            <li>- Terima Kasih = Thank you</li>
+            <li>- Sama-sama = You're welcome</li>
+            <li>- Bisa bantu saya? = Can you help me?</li>
+        </ul>
+        <h3>5. Ya dan Tidak:</h3>
+        <ul>
+            <li>- Ya = Yes</li>
+            <li>- Tidak = No</li>
+        </ul>
+        <h3>6. Menanyakan Harga dan Lokasi:</h3>
+        <ul>
+            <li>- Berapa Harganya? = How much is it?</li>
+            <li>- Dimana…? = Where is…?</li>
+            <li>- Bagaimana cara ke sana? = How do I get there?</li>
+        </ul>
+        <h3>7. Mengungkapkan Keinginan:</h3>
+        <ul>
+            <li>- Saya Ingin… = I want…</li>
+            <li>- Saya Tidak Ingin… = I don’t want…</li>
+            <li>- Boleh saya minta…? = Can I have…?</li>
+        </ul>
+        <h3>8. Sebutan dan Panggilan:</h3>
+        <ul>
+            <li>- Pak/Bapak = Mr./Sir</li>
+            <li>- Bu/Ibu = Mrs./Ma'am</li>
+            <li>- Saudara/Saudari = Sir/Madam (formal)</li>
+            <li>- Mas = Mr. (used for younger men)</li>
+            <li>- Mbak = Miss (used for younger women)</li>
+        </ul>
+        <h3>9. Lain-lain:</h3>
+        <ul>
+            <li>- Ayo = Let's go</li>
+            <li>- Hati-hati = Be careful</li>
+            <li>- Selamat menikmati = Enjoy your meal</li>
+        </ul>
+    </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+  <!----------------------------- FOOTER SECTION ----------------------------->
+  <section class="Footer">
+    <div class="footer-box">
+      <h3>Services</h3>
+      <a href="#">Email Marketing</a>
+      <a href="">Campaigns</a>
+      <a href="#">Brandings</a>
+      <a href="#">Offline</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Services</h3>
+      <a href="#">Our story</a>
+      <a href="">Benefits</a>
+      <a href="#">Team</a>
+      <a href="#">Careers</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Services</h3>
+      <a href="#">Help</a>
+      <a href="">FAQ</a>
+      <a href="#">Contact us</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Social</h3>
+      <div class="Social">
+        <a href="#"><i class="ri-instagram-fill"></i></a>
+        <a href="#"><i class="ri-twitter-fill"></i></a>
+        <a href="#"><i class="ri-facebook-fill"></i></a>
+        <a href="#"><i class="ri-Github-fill"></i></a>
+        <a href="#"><i class="ri-Snpachat-fill"></i></a>
+        <a href="#"><i class="ri-WhatsApp-fill"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!---------------------------- COPYRIGHT SECTION ----------------------------->
+  <!-- <div class="copyright">
+    <p>Copyright 2024 By Tours</p>
+  </div> -->
+
+    <!------------------------------- JAVASCRIPT --------------------------------->
+
+  <!------------------------------- JQuery Link ----------------------------------------->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+  <!---------------------------- Testimonial js Link ------------------------------------>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+
+
+  <!-- NAVBAR STICKYY -->
+  <script>
+    // Kode JavaScript untuk membuat header tetap
+    const header = document.querySelector("header");
+    window.addEventListener("scroll", function() {
+      header.classList.toggle("sticky", window.scrollY > 60)
+    });
+  </script>
+  
+
+
+
+
+
+<!--           LOGIN         -->
+<script>
+  document.getElementById('loginButton').onclick = function() {
+  document.getElementById('loginModal').style.display = "block";
+  document.getElementById('LoginForm').classList.add('active');
+  document.getElementById('RegisterForm').classList.remove('active');
+};
+
+document.getElementById('closeModal').onclick = function() {
+  document.getElementById('loginModal').style.display = "none";
+};
+
+window.onclick = function(event) {
+  if (event.target == document.getElementById('loginModal')) {
+    document.getElementById('loginModal').style.display = "none";
+  }
+};
+
+document.querySelector('.register-link').addEventListener('click', function(event) {
+  event.preventDefault();
+  document.getElementById('LoginForm').classList.remove('active');
+  document.getElementById('RegisterForm').classList.add('active');
+});
+
+document.querySelector('.login-link').addEventListener('click', function(event) {
+  event.preventDefault();
+  document.getElementById('RegisterForm').classList.remove('active');
+  document.getElementById('LoginForm').classList.add('active');
+});
+</script>
+</body>
+</html>

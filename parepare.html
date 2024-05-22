@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parepare</title>
+	<link rel="stylesheet" type="text/css" href="parepare style.css">
+
+ <!---------------------------- Boxicons Link ------------------------------>
+ <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+ <!---------------------------- Remixicon Link ------------------------------>
+ <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
+ <!---------------------------- Google Fonts Link ------------------------------>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+ <!---------------------------- Font Awesome Icons Link ------------------------------>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+ <!------------------------------ Owl Carousel Links ------------------------------>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+ 
+
+ <style>
+  .page-transition {
+    animation: fadeOut 0.5s ease-in-out forwards;
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  body, h1, h2, h3, h4, h5, h6, p, a, span {
+    font-family: 'Open Sans', sans-serif;
+  }
+</style>
+
+<style>
+  .more-content {
+      display: none;
+      color: #000;
+  }
+</style>
+</head> 
+
+<body>
+
+  <!---------------------- BACKGROUND VIDEO --------------------->
+  <div class="hero">
+
+    <!--------------------- NAVBAR SECTION --------------------->
+    <header>
+      <!-- <a href="#" class="logo">Tou<span>rs.</span></a> -->
+      <a href="#" class="logo">
+        <img src="logo.png" alt="Logo" />
+    </a>
+          <ul class="navbar">
+          <li><a href="halaman.html" id="home">Beranda</a></li>
+          <li><a href="#holiday" id="about">Tentang</a></li>
+          <li><a href="informasi umum.html" id="informasi">Informasi umum</a></li>
+          <li class="login"><a href="#" id="loginButton">Masuk</a></li>
+      </ul>
+  </header>
+  </div>
+
+
+
+    <!--------------------- LOGIN SECTION --------------------->
+    <div class="modal" id="loginModal">
+  <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <div class="tab">
+          <!--
+          <button class="tablinks active" onclick="openForm(event, 'LoginForm')">Login</button>
+          <button class="tablinks" onclick="openForm(event, 'RegisterForm')">Register</button>
+          -->
+      </div>
+      <div id="LoginForm" class="form-container active">
+          <div class="container-login">
+              <div class="main-box login">
+                  <h1>Masuk</h1>
+                  <form action="">
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-envelope"></i></span>
+                          <input type="email" required>
+                          <label>Email</label>
+                      </div>
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+                          <input type="password" required>
+                          <label>Kata sandi</label>
+                      </div>
+                      <div class="check">
+                          <label><input type="checkbox">Ingatkan saya!</label>
+                          <span class="forgot-password"><a href="#">Lupa kata sandi?</a></span>
+                      </div>
+                      <button type="submit" class="main-btn-login">Masuk</button>
+                      <div class="register">
+                          <p>Tidak punya akun?<a href="#" class="register-link"> Daftar</a></p>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+      <div id="RegisterForm" class="form-container">
+          <div class="container-login">
+              <div class="main-box register">
+                  <h1>Daftar</h1>
+                  <form action="">
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-user"></i></span>
+                          <input type="text" required>
+                          <label>Nama pengguna</label>
+                      </div>
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-envelope"></i></span>
+                          <input type="email" required>
+                          <label>Email</label>
+                      </div>
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+                          <input type="password" required>
+                          <label>Kata sandi</label>
+                      </div>
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+                          <input type="password" required>
+                          <label>Konfirmasi Kata sandi</label>
+                      </div>
+                      <div class="check">
+                          <label><input type="checkbox">Saya menerima semua syarat & ketentuan</label>
+                      </div>
+                      <button type="submit" class="main-btn">Daftar</button>
+                      <div class="register">
+                          <p>Sudah punya akun?<a href="#" class="login-link"> Masuk</a></p>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+      <!--------------------- HEAD SECTION --------------------->
+      <div class="content">
+        <!-- <h1>Kota Parepare</h1> -->
+    </div>
+
+
+
+    <!-- HOME1 -->
+    <div class="container">
+      <h1>Kota Parepare</h1>
+      <p class="intro">
+        Parepare, salah satu Daerah Tingkat II di Provinsi Sulawesi Selatan, Indonesia, memiliki ciri khas geografis dan budaya yang menarik. Kota ini memiliki luas wilayah sekitar 99,33 km2 dan berpenduduk sekitar 140.000 jiwa. Salah satu tokoh terkenal yang lahir di kota ini adalah B.J. Habibie, Presiden ke-3 Indonesia. Suku Bugis mendiami Kota Parepare dan bahasa yang dominan digunakan adalah bahasa Bugis. Mayoritas penduduknya beragama Islam. Sejarah awal Parepare dimulai dari dataran tinggi yang awalnya merupakan semak belukar dan lubang-lubang tanah. Melalui proses perkembangan sejarah, dataran ini dinamai Kota Parepare. <span id="dots">...</span><span class="more-content"> Kota ini terletak di sebuah teluk yang menghadap ke Selat Makassar. Di bagian utara, berbatasan dengan Kabupaten Sidenreng Rappang, sementara di bagian selatan berbatasan dengan Kabupaten Barru. Meskipun berada di tepi laut, sebagian besar wilayahnya berbukit-bukit.
+        Berdasarkan catatan stasiun klimatologi, rata-rata temperatur Kota Parepare sekitar 28,5°C dengan suhu minimum 25,6°C dan suhu maksimum 31,5°C. Parepare memiliki iklim tropis dengan dua musim: musim kemarau dari Maret hingga September, dan musim hujan dari Oktober hingga Februari.</span>
+      </p>
+      <a href="#" class="read-more" onclick="toggleReadMore(event)">Read More</a>
+      <div class="section">
+          <div class="icon-title">
+              <div class="icon">
+                  <i class="fas fa-lightbulb"></i>
+              </div>
+              <div>
+                  <h2>Kenali Parepare</h2>
+                  <p>Temukan pesona uniknya yang tidak boleh Anda lewatkan</p>
+              </div>
+          </div>
+      </div>
+      <hr>
+      <h2>Tempat Wisata Populer di Parepare</h2>
+      <p class="description">
+          <!-- Beragam destinasi wisata di Parepare, mulai dari wisata alam, sejarah, sampai yang lagi hits. -->
+      </p>
+  </div>
+  <div class="container-2">
+    <div class="cards-2">
+        <div class="card-2">
+            <img src="Wakatobi.jpg" alt="Sunny apartment">
+            <div class="card-content-2">
+                <h2>Taman nasional <br>Wakatobi</h2>
+                <p class="location">
+                  <i class="fas fa-map-marker-alt location-icon"></i>
+                  Wakatobi, Sulawesi tenggara
+                 <!-- <p class="description">Surga bawah laut dengan <br>keanekaragaman hayati yang luar biasa</p> -->
+                      <p><button class="details-btn">Details</button></p>
+                  </div>
+                  <div class="rating-badge">
+                    <i class="fas fa-star"></i>
+                    <span>4.9</span>
+            </div>
+        </div>
+        <div class="card-2">
+            <img src="patung toraja.jpeg" alt="Beachfront House">
+            <div class="card-content-2">
+                <h2>Patung Yesus Buntu <br>Burake</h2>
+                <p class="location">
+                  <i class="fas fa-map-marker-alt location-icon"></i>
+                  Tana Toraja, Sulawesi Selatan
+                  <p><button class="details-btn">Details</button></p>
+                    </div>
+                    <div class="rating-badge">
+                      <i class="fas fa-star"></i>
+                      <span>4.9</span>
+           </div>
+        </div>
+        <div class="card-2">
+            <img src="bunaken.png" alt="House in the woods">
+            <div class="card-content-2">
+                <h2>Taman Nasional <br>Bunaken</h2>
+                <p class="location">
+                  <i class="fas fa-map-marker-alt location-icon"></i>
+                  Manado, Sulawesi Utara
+                  <p><button class="details-btn">Details</button></p>
+            </div>
+            <div class="rating-badge">
+              <i class="fas fa-star"></i>
+              <span>4.9</span>
+            </div>
+        </div>
+        <div class="card-2">
+            <img src="tondano.jpeg" alt="Cozy apartment">
+            <div class="card-content-2">
+                <h2>Danau <br>Tondano</h2>
+                <p class="location">
+                  <i class="fas fa-map-marker-alt location-icon"></i>
+                  Tondano, Sulawesi Utara
+                  <p><button class="details-btn">Details</button></p>
+                </div>
+                <div class="rating-badge">
+                  <i class="fas fa-star"></i>
+                  <span>4.9</span>
+            </div>
+        </div>
+        <div class="card-2">
+          <img src="togean.jpeg" alt="Cozy apartment">
+          <div class="card-content-2">
+              <h2>Pulau <br>Togean</h2>
+              <p class="location">
+                <i class="fas fa-map-marker-alt location-icon"></i>
+                Tojo Una-Una, Sulawesi Tengah
+                <p><button class="details-btn">Details</button></p>
+              </div>
+              <div class="rating-badge">
+                <i class="fas fa-star"></i>
+                <span>4.9</span>
+          </div>
+      </div>
+    <div class="card-2">
+      <img src="rammang2.jpg" alt="Cozy apartment">
+      <div class="card-content-2">
+          <h2>Karst Rammang <br>Rammang</h2>
+          <p class="location">
+            <i class="fas fa-map-marker-alt location-icon"></i>
+            Maros, Sulawesi Selatan
+            <p><button class="details-btn">Details</button></p>
+          </div>
+          <div class="rating-badge">
+            <i class="fas fa-star"></i>
+            <span>4.9</span>
+      </div>
+  </div>
+    <div class="card-2">
+      <img src="bira.jpeg" alt="Cozy apartment">
+      <div class="card-content-2">
+          <h2>Pantai <br>Tanjung Bira</h2>
+          <p class="location">
+            <i class="fas fa-map-marker-alt location-icon"></i>
+            Bulukumba, Sulawesi Selatan
+            <p><button class="details-btn">Details</button></p>
+          </div>
+          <div class="rating-badge">
+            <i class="fas fa-star"></i>
+            <span>4.9</span>
+      </div>
+  </div>
+  <div class="card-2">
+    <img src="selayar.png" alt="Cozy apartment">
+    <div class="card-content-2">
+        <h2>Pulau <br>Selayar</h2>
+        <p class="location">
+          <i class="fas fa-map-marker-alt location-icon"></i>
+          Selayar, Sulawesi Selatan
+          <p><button class="details-btn">Details</button></p>
+        </div>
+        <div class="rating-badge">
+          <i class="fas fa-star"></i>
+          <span>4.9</span>
+    </div>
+  </div>
+  <div class="card-2">
+    <img src="karang.jpeg" alt="Cozy apartment">
+    <div class="card-content-2">
+        <h2>Pantai <br>Tanjung Karang</h2>
+        <p class="location">
+          <i class="fas fa-map-marker-alt location-icon"></i>
+          Palu, Sulawesi Tengah
+          <p><button class="details-btn">Details</button></p>
+        </div>
+        <div class="rating-badge">
+          <i class="fas fa-star"></i>
+          <span>4.9</span>
+    </div>
+  </div>
+  <div class="card-2">
+    <img src="gorontalo.png" alt="Cozy apartment">
+    <div class="card-content-2">
+        <h2>Taman Nasional Bogani <br>Nani Wartabone</h2>
+        <p class="location">
+          <i class="fas fa-map-marker-alt location-icon"></i>
+          Gorontalo, Sulawesi Utara
+          <p><button class="details-btn">Details</button></p>
+        </div>
+        <div class="rating-badge">
+          <i class="fas fa-star"></i>
+          <span>4.9</span>
+    </div>
+  </div>
+  <div class="card-2">
+    <img src="ora.jpeg" alt="Cozy apartment">
+    <div class="card-content-2">
+        <h2>Pantai <br>Ora</h2>
+        <p class="location">
+          <i class="fas fa-map-marker-alt location-icon"></i>
+          Maluku Tengah, Maluku
+          <p><button class="details-btn">Details</button></p>
+        </div>
+        <div class="rating-badge">
+          <i class="fas fa-star"></i>
+          <span>4.9</span>
+    </div>
+  </div>
+  <div class="card-2">
+    <img src="99 kubah.jpg" alt="Cozy apartment">
+    <div class="card-content-2">
+        <h2>Masjid Kubah <br> 99 Asmaul Husna</h2>
+        <p class="location">
+          <i class="fas fa-map-marker-alt location-icon"></i>
+          Makassar, Sulawesi Selatan
+          <p><button class="details-btn">Details</button></p>
+        </div>
+        <div class="rating-badge">
+          <i class="fas fa-star"></i>
+          <span>4.9</span>
+    </div>
+  </div>
+    </div>
+  </div>
+  
+
+
+      <!--------------------- HOME SECTION --------------------->
+      <section class="explore-more">
+  <div class="header">
+      <h1>Kunjungi Wisata di Parepare</h1>
+      <p class="sub-text">Beragam destinasi wisata di Parepare, mulai dari wisata alam, sejarah, sampai yang lagi hits.</p>
+  </div>
+  <div class="filters">
+      <button class="filter-btn active" onclick="showCategory('popular')">Destinasi Parepare</button>
+      <button class="filter-btn" onclick="showCategory('pulau')">Pulau</button>
+      <button class="filter-btn" onclick="showCategory('danau')">Danau</button>
+      <button class="filter-btn" onclick="showCategory('pantai')">Pantai</button>
+      <button class="filter-btn" onclick="showCategory('gunung')">Gunung</button>
+      <button class="filter-btn" onclick="showCategory('budaya')">Budaya & Sejarah</button>
+      <button class="filter-btn" onclick="showCategory('AirTerjun')">Alam</button>
+        <!-- <button class="filter-btn" onclick="openModal()"><i class="fas fa-sliders-h"></i> Filters</button> -->
+  </div>
+  <div id="cards" class="card-container">
+      <div class="card">
+          <img src="borobudur.jpg" alt="Candi Borobudur">
+          <div class="card-content">
+              <div class="rating-badge">
+                  <i class="fas fa-star"></i>
+              </div>
+              <p class="location">
+                  <i class="fas fa-map-marker-alt location-icon"></i>
+              </p>
+              <button class="details-btn">Details</button>
+          </div>
+      </div>
+      <div class="card">
+        <img src="pink beach.png" alt="Pink Beach">
+        <div class="card-content">
+            <div class="rating-badge">
+                <i class="fas fa-star"></i>
+            </div>
+            <p class="location">
+                <i class="fas fa-map-marker-alt location-icon"></i>
+            </p>
+            <button class="details-btn">Details</button>
+        </div>
+    </div>
+      <div class="card">
+          <img src="pura luhur.jpg" alt="Pura Luhur Uluwatu">
+          <div class="card-content">
+              <div class="rating-badge">
+                  <i class="fas fa-star"></i>
+              </div>
+              <p class="location">
+                  <i class="fas fa-map-marker-alt location-icon"></i>
+              </p>
+              <button class="details-btn">Details</button>
+          </div>
+      </div>
+      <div class="card">
+          <img src="candi.jpg" alt="Candi Prambanan">
+          <div class="card-content">
+              <div class="rating-badge">
+                  <i class="fas fa-star"></i>
+              </div>
+              <p class="location">
+                  <i class="fas fa-map-marker-alt location-icon"></i>
+              </p>
+              <button class="details-btn">Details</button>
+          </div>
+      </div>
+      <div class="card">
+          <img src="komodo.jpg" alt="Pulau Komodo">
+          <div class="card-content">
+              <div class="rating-badge">
+                  <i class="fas fa-star"></i>
+              </div>
+              <p class="location">
+                  <i class="fas fa-map-marker-alt location-icon"></i>
+              </p>
+              <button class="details-btn">Details</button>
+          </div>
+      </div>
+      <div class="card hidden">
+          <img src="rammang.png" alt="Rammang Rammang">
+          <div class="card-content">
+              <div class="rating-badge">
+                  <i class="fas fa-star"></i>
+              </div>
+              <p class="location">
+                  <i class="fas fa-map-marker-alt location-icon"></i>
+              </p>
+              <button class="details-btn">Details</button>
+          </div>
+      </div>
+      <div class="card hidden">
+          <img src="pura agung.jpg" alt="Pura Agung Besakih">
+          <div class="card-content">
+              <div class="rating-badge">
+                  <i class="fas fa-star"></i>
+              </div>
+              <p class="location">
+                  <i class="fas fa-map-marker-alt location-icon"></i>
+              </p>
+              <button class="details-btn">Details</button>
+          </div>
+      </div>
+      <div class="card hidden">
+          <img src="Piaynemo Raja Ampat.jpg" alt="Raja Ampat">
+          <div class="card-content">
+              <div class="rating-badge">
+                  <i class="fas fa-star"></i>
+              </div>
+              <p class="location">
+                  <i class="fas fa-map-marker-alt location-icon"></i>
+              </p>
+              <button class="details-btn">Details</button>
+          </div>
+      </div>
+      <div class="card hidden">
+          <img src="banyumala.jpg" alt="Banyumala">
+          <div class="card-content">
+              <div class="rating-badge">
+                  <i class="fas fa-star"></i>
+              </div>
+              <p class="location">
+                  <i class="fas fa-map-marker-alt location-icon"></i>
+              </p>
+              <button class="details-btn">Details</button>
+          </div>
+      </div>
+      <div class="card hidden">
+        <img src="bromo bg.png" alt="Gunung Bromo">
+        <div class="card-content">
+            <div class="rating-badge">
+                <i class="fas fa-star"></i>
+            </div>
+            <p class="location">
+                <i class="fas fa-map-marker-alt location-icon"></i>
+            </p>
+            <button class="details-btn">Details</button>
+        </div>
+    </div>
+    <div class="card hidden">
+      <img src="labuan bajoo.jpg" alt="Labuan Bajo">
+      <div class="card-content">
+          <div class="rating-badge">
+              <i class="fas fa-star"></i>
+          </div>
+          <p class="location">
+              <i class="fas fa-map-marker-alt location-icon"></i>
+          </p>
+          <button class="details-btn">Details</button>
+      </div>
+  </div>
+  <div class="card hidden">
+    <img src="ollon.png" alt="Lembah Ollon">
+    <div class="card-content">
+        <div class="rating-badge">
+            <i class="fas fa-star"></i>
+        </div>
+        <p class="location">
+            <i class="fas fa-map-marker-alt location-icon"></i>
+        </p>
+        <button class="details-btn">Details</button>
+    </div>
+</div>
+<div class="card hidden">
+  <img src="sipiso.png" alt="Sipiso-piso">
+  <div class="card-content">
+      <div class="rating-badge">
+          <i class="fas fa-star"></i>
+      </div>
+      <p class="location">
+          <i class="fas fa-map-marker-alt location-icon"></i>
+      </p>
+      <button class="details-btn">Details</button>
+  </div>
+</div>
+<div class="card hidden">
+  <img src="ijen.jpg" alt="Gunung Ijen">
+  <div class="card-content">
+      <div class="rating-badge">
+          <i class="fas fa-star"></i>
+      </div>
+      <p class="location">
+          <i class="fas fa-map-marker-alt location-icon"></i>
+      </p>
+      <button class="details-btn">Details</button>
+  </div>
+</div>
+<div class="card hidden">
+  <img src="sewu.jpg" alt="Tumpak Sewu">
+  <div class="card-content">
+      <div class="rating-badge">
+          <i class="fas fa-star"></i>
+      </div>
+      <p class="location">
+          <i class="fas fa-map-marker-alt location-icon"></i>
+      </p>
+      <button class="details-btn">Details</button>
+  </div>
+</div>
+<div class="card hidden">
+  <img src="danau toba.jpg" alt="Danau Toba">
+  <div class="card-content">
+      <div class="rating-badge">
+          <i class="fas fa-star"></i>
+      </div>
+      <p class="location">
+          <i class="fas fa-map-marker-alt location-icon"></i>
+      </p>
+      <button class="details-btn">Details</button>
+  </div>
+</div>
+<div class="card hidden">
+  <img src="waerebo.jpg" alt="Waerebo Village">
+  <div class="card-content">
+      <div class="rating-badge">
+          <i class="fas fa-star"></i>
+      </div>
+      <p class="location">
+          <i class="fas fa-map-marker-alt location-icon"></i>
+      </p>
+      <button class="details-btn">Details</button>
+  </div>
+</div>
+<div class="card hidden">
+  <img src="goa.png" alt="Goa Gong Pacitan">
+  <div class="card-content">
+      <div class="rating-badge">
+          <i class="fas fa-star"></i>
+      </div>
+      <p class="location">
+          <i class="fas fa-map-marker-alt location-icon"></i>
+      </p>
+      <button class="details-btn">Details</button>
+  </div>
+</div>
+<div class="card hidden">
+  <img src="cukang.png" alt="Cukang Taneuh">
+  <div class="card-content">
+      <div class="rating-badge">
+          <i class="fas fa-star"></i>
+      </div>
+      <p class="location">
+          <i class="fas fa-map-marker-alt location-icon"></i>
+      </p>
+      <button class="details-btn">Details</button>
+  </div>
+</div>
+<div class="card hidden">
+  <img src="kuburan.jpg" alt="Kuburan Batu Lemo">
+  <div class="card-content">
+      <div class="rating-badge">
+          <i class="fas fa-star"></i>
+      </div>
+      <p class="location">
+          <i class="fas fa-map-marker-alt location-icon"></i>
+      </p>
+      <button class="details-btn">Details</button>
+  </div>
+</div>
+<div class="card hidden">
+  <img src="Nglirip.png" alt="Nglirip">
+  <div class="card-content">
+      <div class="rating-badge">
+          <i class="fas fa-star"></i>
+      </div>
+      <p class="location">
+          <i class="fas fa-map-marker-alt location-icon"></i>
+      </p>
+      <button class="details-btn">Details</button>
+  </div>
+</div>
+<div class="card hidden">
+  <img src="Derawan.png" alt="Kepulauan Derawan">
+  <div class="card-content">
+      <div class="rating-badge">
+          <i class="fas fa-star"></i>
+      </div>
+      <p class="location">
+          <i class="fas fa-map-marker-alt location-icon"></i>
+      </p>
+      <button class="details-btn">Details</button>
+  </div>
+</div>
+<div class="card hidden">
+  <img src="Benang Kelambu.png" alt="Benang Kelambu">
+  <div class="card-content">
+      <div class="rating-badge">
+          <i class="fas fa-star"></i>
+      </div>
+      <p class="location">
+          <i class="fas fa-map-marker-alt location-icon"></i>
+      </p>
+      <button class="details-btn">Details</button>
+  </div>
+</div>
+<div class="card hidden">
+  <img src="Madakaripura.png" alt="Madakaripura">
+  <div class="card-content">
+      <div class="rating-badge">
+          <i class="fas fa-star"></i>
+      </div>
+      <p class="location">
+          <i class="fas fa-map-marker-alt location-icon"></i>
+      </p>
+      <button class="details-btn">Details</button>
+  </div>
+</div>
+<div class="card hidden">
+  <img src="Nusa Penida.jpg" alt="Nusa Penida">
+  <div class="card-content">
+      <div class="rating-badge">
+          <i class="fas fa-star"></i>
+      </div>
+      <p class="location">
+          <i class="fas fa-map-marker-alt location-icon"></i>
+      </p>
+      <button class="details-btn">Details</button>
+  </div>
+</div>
+<div class="card hidden">
+  <img src="lorentz.png" alt="Lorentz">
+  <div class="card-content">
+      <div class="rating-badge">
+          <i class="fas fa-star"></i>
+      </div>
+      <p class="location">
+          <i class="fas fa-map-marker-alt location-icon"></i>
+      </p>
+      <button class="details-btn">Details</button>
+  </div>
+</div>
+<div class="card hidden">
+  <img src="karawa.png" alt="Karawa">
+  <div class="card-content">
+      <div class="rating-badge">
+          <i class="fas fa-star"></i>
+      </div>
+      <p class="location">
+          <i class="fas fa-map-marker-alt location-icon"></i>
+      </p>
+      <button class="details-btn">Details</button>
+  </div>
+</div>
+<div class="card hidden">
+  <img src="bulusaraung.png" alt="Bulusaraung">
+  <div class="card-content">
+      <div class="rating-badge">
+          <i class="fas fa-star"></i>
+      </div>
+      <p class="location">
+          <i class="fas fa-map-marker-alt location-icon"></i>
+      </p>
+      <button class="details-btn">Details</button>
+  </div>
+</div>
+<div class="card hidden">
+  <img src="kedung.png" alt="Keduang Kandang">
+  <div class="card-content">
+      <div class="rating-badge">
+          <i class="fas fa-star"></i>
+      </div>
+      <p class="location">
+          <i class="fas fa-map-marker-alt location-icon"></i>
+      </p>
+      <button class="details-btn">Details</button>
+  </div>
+</div>
+  </div>
+  <div class="show-more">
+      <button id="show-more-btn">Menampilkan lebih banyak</button>
+      <!-- <button id="show-more-btn">Show more</button> -->
+  </div>
+</section>
+
+
+
+
+  <!----------------------------- FOOTER SECTION ----------------------------->
+  <section class="Footer">
+    <div class="footer-box">
+      <h3>Services</h3>
+      <a href="#">Email Marketing</a>
+      <a href="">Campaigns</a>
+      <a href="#">Brandings</a>
+      <a href="#">Offline</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Services</h3>
+      <a href="#">Our story</a>
+      <a href="">Benefits</a>
+      <a href="#">Team</a>
+      <a href="#">Careers</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Services</h3>
+      <a href="#">Help</a>
+      <a href="">FAQ</a>
+      <a href="#">Contact us</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Social</h3>
+      <div class="Social">
+        <a href="#"><i class="ri-instagram-fill"></i></a>
+        <a href="#"><i class="ri-twitter-fill"></i></a>
+        <a href="#"><i class="ri-facebook-fill"></i></a>
+        <a href="#"><i class="ri-Github-fill"></i></a>
+        <a href="#"><i class="ri-Snpachat-fill"></i></a>
+        <a href="#"><i class="ri-WhatsApp-fill"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!---------------------------- COPYRIGHT SECTION ----------------------------->
+  <!-- <div class="copyright">
+    <p>Copyright 2024 By Tours</p>
+  </div> -->
+
+
+
+
+
+
+
+    <!------------------------------- JAVASCRIPT --------------------------------->
+
+  <!------------------------------- JQuery Link ----------------------------------------->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+  <!---------------------------- Testimonial js Link ------------------------------------>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+
+
+  <!-------------- Link JS Swiper ---------------->
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+
+
+
+  <!-------------- ANIMASI HALAMAN ---------------->
+  <!-- <script src="assets/js/scrollreveal.min.js"></script>
+  <script>
+    const sr = ScrollReveal({
+      origin: 'top',
+      distance:'60px',
+      duration: 3000,
+      delay: 400,
+    });
+
+    sr.reveal(`.container-2`,{delay: 600, distance: '100px', interval: 100});
+    sr.reveal(`.container`,{delay: 600, distance: '100px', interval: 100});
+    sr.reveal(`.image-caption, .background-image, .search-bar2`, {origin: 'left'});
+    sr.reveal(`.card-container, .show-more `, {origin: 'bottom',});
+    sr.reveal(`.tour`, {origin: 'bottom',});
+    sr.reveal(`.content`, {origin: 'bottom',});
+    sr.reveal(`.card-content`, {origin: 'bottom',});
+    sr.reveal(`.heading`,{delay: 600, distance: '100px', interval: 100});
+    sr.reveal(`.search-container`, {origin: 'bottom',});
+    sr.reveal(`.Footer`, {origin: 'bottom',});
+    sr.reveal(`.holiday-img`, {origin: 'left',});
+    sr.reveal(`.holiday-text`, {origin: 'right',});
+
+  </script> -->
+
+
+
+
+<!------------------- NAVBAR STICKY ---------------->
+<script>
+  // Kode JavaScript untuk membuat header tetap
+  const header = document.querySelector("header");
+  window.addEventListener("scroll", function() {
+    header.classList.toggle("sticky", window.scrollY > 60)
+  });
+</script>
+
+
+
+<!-------------------------- LOGIN ------------------------------->
+<script>
+  document.getElementById('loginButton').onclick = function() {
+  document.getElementById('loginModal').style.display = "block";
+  document.getElementById('LoginForm').classList.add('active');
+  document.getElementById('RegisterForm').classList.remove('active');
+};
+
+document.getElementById('closeModal').onclick = function() {
+  document.getElementById('loginModal').style.display = "none";
+};
+
+window.onclick = function(event) {
+  if (event.target == document.getElementById('loginModal')) {
+    document.getElementById('loginModal').style.display = "none";
+  }
+};
+
+document.querySelector('.register-link').addEventListener('click', function(event) {
+  event.preventDefault();
+  document.getElementById('LoginForm').classList.remove('active');
+  document.getElementById('RegisterForm').classList.add('active');
+});
+
+document.querySelector('.login-link').addEventListener('click', function(event) {
+  event.preventDefault();
+  document.getElementById('RegisterForm').classList.remove('active');
+  document.getElementById('LoginForm').classList.add('active');
+});
+</script>
+
+
+
+
+
+
+
+<!----------------------------------------------- HOME SECTION --------------------------------------------->
+<script>
+  const cardsData = {
+    popular: [
+        { title: 'Candi Borobudur', location: 'Magelang, Jawa Tengah', rating: 4.7, imgSrc: 'borobudur.jpg' },
+        { title: 'Pink Beach', location: 'Manggarai Barat, NTT', rating: 4.6, imgSrc: 'pink beach.png' },
+        { title: 'Candi Prambanan', location: 'Yogyakarta, Jawa Tengah', rating: 4.7, imgSrc: 'candi.jpg' },
+        { title: 'Gunung Bromo', location: 'Probolinggo, Jawa Timur', rating: 4.7, imgSrc: 'bromo bg.png' },
+        { title: 'Pulau Komodo', location: 'Pulau, NTT', rating: 4.4, imgSrc: 'komodo.jpg' },
+        { title: 'Rammang Rammang', location: 'Maros, Sulawesi Selatan', rating: 4.7, imgSrc: 'rammang.png' },
+        { title: 'Pura Luhur Uluwatu', location: 'Pecatu, Bali', rating: 4.6, imgSrc: 'pura luhur.jpg' },
+        { title: 'Raja Ampat', location: 'Sorong, Papua Barat Daya', rating: 4.4, imgSrc: 'raja ampat-bg.png' },
+        { title: 'Banyumala', location: 'Buleleng, Bali', rating: 4.6, imgSrc: 'banyumala.jpg' },
+        { title: 'Labuan Bajo', location: 'Manggarai Barat, NTT', rating: 4.7, imgSrc: 'labuan bajoo.jpg' },
+        { title: 'Lembah Ollon', location: 'Tana Toraja, Sulawesi Selatan', rating: 4.8, imgSrc: 'ollon.png' },
+        { title: 'Pura Agung Besakih', location: 'Karangasem, Bali', rating: 4.5, imgSrc: 'pura agung.jpg' },
+        { title: 'Sipiso-piso', location: 'Sumut, Sumatera Utara', rating: 4.6, imgSrc: 'sipiso.png' },
+        { title: 'Gunung Ijen', location: 'Banyuwangi, Jawa Timur', rating: 4.7, imgSrc: 'ijen.jpg' },
+        { title: 'Tumpak Sewu', location: 'Lumajang, Jawa Timur', rating: 4.6, imgSrc: 'sewu.jpg' },
+        { title: 'Danau Toba', location: 'Pulau Samosir, Sumatera Utara', rating: 4.6, imgSrc: 'danau toba.jpg' },
+        { title: 'Waerebo Village', location: 'Kepulauan Manggarai, NTT', rating: 4.7, imgSrc: 'waerebo.jpg' },
+        { title: 'Goa Gong Pacitan', location: 'Pacitan, Jawa Timur', rating: 4.4, imgSrc: 'goa.png' },
+        { title: 'Cukang Taneuh', location: 'Pangandaran, Jawa Barat', rating: 4.6, imgSrc: 'cukang.png' },
+        { title: 'Kuburan Batu Lemo', location: 'Tana Toraja, Sulawesi Selatan', rating: 4.6, imgSrc: 'kuburan.jpg' },
+        { title: 'Nglirip', location: 'Lumajang, Jawa Timur', rating: 4.6, imgSrc: 'Nglirip.png' },
+        { title: 'Kepulauan Derawan', location: 'Berau, Kalimantan Timur', rating: 4.6, imgSrc: 'Derawan.png' },
+        { title: 'Benang Kelambu', location: 'Lombok Tengah, Lombok', rating: 4.6, imgSrc: 'Benang Kelambu.png' },
+        { title: 'Madakaripura', location: 'Probolinggo, Jawa Timur', rating: 4.6, imgSrc: 'Madakaripura.png' },
+        { title: 'Nusa Penida', location: 'Klungkung, Bali', rating: 4.8, imgSrc: 'Nusa Penida.jpg' },
+        { title: 'Lorentz', location: 'Jayawijaya, Papua', rating: 4.4, imgSrc: 'lorentz.png' },
+        { title: 'Karawa', location: 'Pinrang, Sulawesi Selatan', rating: 4.6, imgSrc: 'karawa.png' },
+        { title: 'Bulusaraung', location: 'Pangkep, Sulawesi Selatan', rating: 4.8, imgSrc: 'bulusaraung.png' },
+        { title: 'Kedung Kandang', location: 'Yogyakarta, Jawa Tengah', rating: 4.8, imgSrc: 'kedung.png' },
+
+
+    ],
+    pulau: [
+        { title: 'Pulau Komodo', location: 'Pulau, NTT', rating: 4.4, imgSrc: 'komodo.jpg' },
+        { title: 'Labuan Bajo', location: 'Manggarai Barat, NTT', rating: 4.7, imgSrc: 'labuan bajoo.jpg' },
+        { title: 'Kepulauan Derawan', location: 'Berau, Kalimantan Timur', rating: 4.6, imgSrc: 'Derawan.png' },
+        { title: 'Nusa Penida', location: 'Klungkung, Bali', rating: 4.8, imgSrc: 'Nusa Penida.jpg' },
+        { title: 'Raja Ampat', location: 'Sorong, Papua Barat Daya', rating: 4.4, imgSrc: 'raja ampat-bg.png' },
+
+    ],
+
+    danau: [
+        { title: 'Danau Toba', location: 'Pulau Samosir, Sumatera Utara', rating: 4.6, imgSrc: 'danau toba.jpg' },
+        { title: 'Lorentz', location: 'Jayawijaya, Papua', rating: 4.4, imgSrc: 'lorentz.png' },
+    ],
+    pantai: [
+        { title: 'Pink Beach', location: 'Manggarai Barat, NTT', rating: 4.6, imgSrc: 'pink beach.png' },
+    ],
+    gunung: [
+        { title: 'Bulusaraung', location: 'Pangkep, Sulawesi Selatan', rating: 4.8, imgSrc: 'bulusaraung.png' },
+        { title: 'Gunung Bromo', location: 'Probolinggo, Jawa Timur', rating: 4.7, imgSrc: 'bromo bg.png' },
+        { title: 'Lembah Ollon', location: 'Tana Toraja, Sulawesi Selatan', rating: 4.8, imgSrc: 'ollon.png' },
+        { title: 'Gunung Ijen', location: 'Banyuwangi, Jawa Timur', rating: 4.7, imgSrc: 'ijen.jpg' },
+        { title: 'Waerebo Village', location: 'Kepulauan Manggarai, NTT', rating: 4.7, imgSrc: 'waerebo.jpg' },
+    ],
+    budaya: [
+        { title: 'Kuburan Batu Lemo', location: 'Tana Toraja, Sulawesi Selatan', rating: 4.6, imgSrc: 'kuburan.jpg' },
+        { title: 'Candi Borobudur', location: 'Magelang, Jawa Tengah', rating: 4.7, imgSrc: 'borobudur.jpg' },
+        { title: 'Candi Prambanan', location: 'Yogyakarta, Jawa Tengah', rating: 4.7, imgSrc: 'candi.jpg' },
+        { title: 'Pura Luhur Uluwatu', location: 'Pecatu, Bali', rating: 4.6, imgSrc: 'pura luhur.jpg' },
+        { title: 'Pura Agung Besakih', location: 'Karangasem, Bali', rating: 4.5, imgSrc: 'pura agung.jpg' },
+    ],
+    AirTerjun: [
+        { title: 'Karawa', location: 'Pinrang, Sulawesi Selatan', rating: 4.6, imgSrc: 'karawa.png' },
+        { title: 'Benang Kelambu', location: 'Lombok Tengah, Lombok', rating: 4.6, imgSrc: 'Benang Kelambu.png' },
+        { title: 'Madakaripura', location: 'Probolinggo, Jawa Timur', rating: 4.6, imgSrc: 'Madakaripura.png' },
+        { title: 'Nglirip', location: 'Lumajang, Jawa Timur', rating: 4.6, imgSrc: 'Nglirip.png' },
+        { title: 'Cukang Taneuh', location: 'Pangandaran, Jawa Barat', rating: 4.6, imgSrc: 'cukang.png' },
+        { title: 'Tumpak Sewu', location: 'Lumajang, Jawa Timur', rating: 4.6, imgSrc: 'sewu.jpg' },
+        { title: 'Sipiso-piso', location: 'Sumut, Sumatera Utara', rating: 4.6, imgSrc: 'sipiso.png' },
+        { title: 'Banyumala', location: 'Buleleng, Bali', rating: 4.6, imgSrc: 'banyumala.jpg' },
+        { title: 'Kedung Kandang', location: 'Yogyakarta, Jawa Tengah', rating: 4.8, imgSrc: 'kedung.png' },
+    ],
+};
+
+let currentIndex = 0;
+let hiddenCards = [];
+
+function showCategory(category) {
+    const cardsContainer = document.getElementById('cards');
+    cardsContainer.innerHTML = '';
+
+    const categoryCards = cardsData[category];
+    categoryCards.forEach(card => {
+        const cardElement = document.createElement('div');
+        cardElement.className = 'card';
+        cardElement.innerHTML = `
+            <img src="${card.imgSrc}" alt="${card.title}">
+            <div class="card-content">
+                <div class="rating-badge">
+                    <i class="fas fa-star"></i>
+                    <span>${card.rating}</span>
+                </div>
+                <h3>${card.title}</h3>
+                <p class="location">
+                    <i class="fas fa-map-marker-alt location-icon"></i>
+                    ${card.location}
+                </p>
+                <button class="details-btn">Details</button>
+            </div>
+        `;
+        cardsContainer.appendChild(cardElement);
+    });
+
+    // Mengatur tombol "Show More"
+    currentIndex = 4;
+    hiddenCards = Array.from(cardsContainer.querySelectorAll('.card'));
+    hiddenCards.forEach((card, index) => {
+        if (index >= 4) {
+            card.classList.add('hidden');
+        }
+    });
+
+    if (hiddenCards.length > 4) {
+        document.getElementById('show-more-btn').style.display = 'block';
+    } else {
+        document.getElementById('show-more-btn').style.display = 'none';
+    }
+
+    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+    document.querySelector(`.filter-btn[onclick="showCategory('${category}')"]`).classList.add('active');
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    const showMoreBtn = document.getElementById("show-more-btn");
+
+    showMoreBtn.addEventListener("click", () => {
+        for (let i = 0; i < 4 && currentIndex < hiddenCards.length; i++, currentIndex++) {
+            hiddenCards[currentIndex].classList.remove("hidden");
+        }
+
+        if (currentIndex >= hiddenCards.length) {
+            showMoreBtn.style.display = 'none';
+        }
+    });
+
+    // Tampilkan kategori default
+    showCategory('popular');
+});
+</script>
+
+
+
+
+<!-- HOME1 READ MORE -->
+<script>
+  function toggleReadMore(event) {
+      event.preventDefault();
+      var dots = document.getElementById("dots");
+      var moreText = document.querySelector(".more-content");
+      var readMoreLink = event.currentTarget;
+  
+      // Debugging statements
+      console.log("Dots display style:", dots.style.display);
+      console.log("More text display style:", moreText.style.display);
+      console.log("Read more link text:", readMoreLink.textContent);
+  
+      if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          readMoreLink.textContent = "Read More";
+          moreText.style.display = "none";
+      } else {
+          dots.style.display = "none";
+          readMoreLink.textContent = "Read Less";
+          moreText.style.display = "inline";
+      }
+  
+      // Additional debugging statements after the change
+      console.log("After click - Dots display style:", dots.style.display);
+      console.log("After click - More text display style:", moreText.style.display);
+      console.log("After click - Read more link text:", readMoreLink.textContent);
+  }
+  </script>
+</body>
+</html>

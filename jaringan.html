@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jaringan</title>
+	<link rel="stylesheet" type="text/css" href="jaringan.css">
+
+ <!---------------------------- Boxicons Link ------------------------------>
+ <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+ <!---------------------------- Remixicon Link ------------------------------>
+ <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
+ <!---------------------------- Google Fonts Link ------------------------------>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+ <!---------------------------- Font Awesome Icons Link ------------------------------>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+ <!------------------------------ Owl Carousel Links ------------------------------>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+
+ <style>
+  .page-transition {
+    animation: fadeOut 0.5s ease-in-out forwards;
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  body, h1, h2, h3, h4, h5, h6, p, a, span {
+    font-family: 'Open Sans', sans-serif;
+  }
+</style>
+
+</head> 
+
+<body>
+
+  <!---------------------- HEAD --------------------->
+  <div class="hero">
+
+    <!--------------------- NAVBAR SECTION --------------------->
+    
+    <header>
+      <!-- <a href="#" class="logo">Tou<span>rs.</span></a> -->
+      <a href="#" class="logo">
+        <img src="logo.png" alt="Logo" />
+    </a>
+          <ul class="navbar">
+          <li><a href="halaman.html" id="home">Beranda</a></li>
+          <li><a href="halaman.html" id="about">Tentang</a></li>
+          <li><a href="informasi umum.html" id="informasi">Informasi Umum</a></li>
+          <li class="login"><a href="#" id="loginButton">Masuk</a></li>
+      </ul>
+  </header>
+  </div>
+
+
+
+ <!-- Form Login Modal -->
+<div class="modal" id="loginModal">
+  <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <div class="tab">
+          <!--
+          <button class="tablinks active" onclick="openForm(event, 'LoginForm')">Login</button>
+          <button class="tablinks" onclick="openForm(event, 'RegisterForm')">Register</button>
+          -->
+      </div>
+      <div id="LoginForm" class="form-container active">
+          <div class="container-login">
+              <div class="main-box login">
+                  <h1>Masuk</h1>
+                  <form action="">
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-envelope"></i></span>
+                          <input type="email" required>
+                          <label>Email</label>
+                      </div>
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+                          <input type="password" required>
+                          <label>Kata sandi</label>
+                      </div>
+                      <div class="check">
+                          <label><input type="checkbox">Ingatkan saya!</label>
+                          <span class="forgot-password"><a href="#">Lupa kata sandi?</a></span>
+                      </div>
+                      <button type="submit" class="main-btn-login">Masuk</button>
+                      <div class="register">
+                          <p>Tidak punya akun?<a href="#" class="register-link"> Daftar</a></p>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+      <div id="RegisterForm" class="form-container">
+          <div class="container-login">
+              <div class="main-box register">
+                  <h1>Daftar</h1>
+                  <form action="">
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-user"></i></span>
+                          <input type="text" required>
+                          <label>Nama pengguna</label>
+                      </div>
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-envelope"></i></span>
+                          <input type="email" required>
+                          <label>Email</label>
+                      </div>
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+                          <input type="password" required>
+                          <label>Kata sandi</label>
+                      </div>
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+                          <input type="password" required>
+                          <label>Konfirmasi Kata sandi</label>
+                      </div>
+                      <div class="check">
+                          <label><input type="checkbox">Saya menerima semua syarat & ketentuan</label>
+                      </div>
+                      <button type="submit" class="main-btn">Daftar</button>
+                      <div class="register">
+                          <p>Sudah punya akun?<a href="#" class="login-link"> Masuk</a></p>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+      <!--------------------- HEAD SECTION --------------------->
+
+
+
+
+
+    <!-------- Artikel Wisata ---------------->
+    <div class="center-text2">
+      <h2>Wifi & Konektivitas</h2>
+        <span class="line"></span>
+    </div>
+    
+
+
+
+    
+
+
+
+
+
+    <div class="container">
+      <nav class="breadcrumb">
+          <!-- <a href="#">Asia</a> /
+          <a href="#">Thailand</a> / -->
+          <!-- <span>Bangkok</span> -->
+      </nav>
+
+
+
+      <!-- <h1>Bangkok</h1> -->
+      <div class="container-teks">
+      <p class="intro">
+        Dengan kemajuan teknologi informasi dan komunikasi, internet di Indonesia semakin mudah diakses oleh masyarakat. Memahami pilihan konektivitas yang ada bisa membantu Anda terus terhubung dan menggunakan internet dengan lebih baik. Koneksi online yang andal kini menjadi kebutuhan pokok dalam kehidupan sehari-hari, baik untuk bisnis, menjaga hubungan, atau sekadar mendapatkan informasi terbaru. Di berbagai tempat umum di Indonesia, Wi-Fi tersedia untuk memudahkan Anda tetap terhubung di mana pun Anda berada.
+        </p>
+      <!-- <a href="#" class="read-more">Read More</a> -->
+      <div class="info-section">
+        <!-- <div class="icon-container"> -->
+            <!-- <i class="fas fa-1 icon"></i> -->
+        </div>
+
+        <div class="text-container1">
+            <h1>Apakah Bandara di Indonesia memiliki Koneksi Wi-Fi?</h1>
+            <p>
+              Sebagian besar bandara internasional di Indonesia menyediakan koneksi Wi-Fi bagi pengunjung. Misalnya, Bandara Internasional Soekarno-Hatta telah menyediakan layanan Wi-Fi di Terminal 1 dan Terminal 2 melalui fasilitas Wi-Fi Corner, yang bekerja sama dengan PT Telkom. Untuk informasi lebih lanjut tentang koneksi Wi-Fi di bandara lainnya, Anda dapat menghubungi meja informasi setelah tiba di bandara tersebut.
+            </p>
+        </div>
+        <div class="text-container1">
+          <h1>Apakah Hotel di Indonesia memiliki Wi-Fi Gratis?</h1>
+          <p>
+            Umumnya hotel di Indonesia menyediakan akses Wi-Fi gratis untuk para tamunya. Ini adalah fasilitas standar yang biasanya termasuk dalam paket penginapan. Namun, kualitas dan kecepatan koneksi Wi-Fi dapat bervariasi tergantung pada masing-masing hotel. Sebelum memesan penginapan, disarankan untuk memeriksa kebijakan hotel terkait layanan Wi-Fi untuk memastikan bahwa fasilitas tersebut memenuhi kebutuhan Anda.
+          </p>
+      </div>
+      <div class="text-container1">
+        <h1>Apakah Stasiun Kereta Api Indonesia memiliki Wi-Fi Gratis?</h1>
+        <p>
+            Tidak semua stasiun kereta api di Indonesia memiliki layanan Wi-Fi gratis. Meskipun beberapa stasiun besar mungkin menyediakan akses Wi-Fi gratis, namun ketersediaan dan kualitasnya dapat bervariasi antara satu stasiun dengan yang lain. Sebaiknya Anda memeriksa dengan stasiun tertentu atau operator kereta api sebelumnya untuk mengetahui apakah layanan Wi-Fi gratis tersedia di stasiun yang Anda tuju.
+        </p>
+    </div>
+    <div class="text-container1">
+      <h1>Dimana Saya Dapat Menemukan Wi-Fi Gratis di Area Publik Kota-kota di Indonesia?</h1>
+      <p>
+        Anda bisa menemukan Wi-Fi gratis di berbagai area publik di kota-kota di Indonesia, seperti taman, mal, kafe, dan perpustakaan. Beberapa tempat wisata juga menyediakan layanan serupa. Selain itu, beberapa kantor, pusat perbelanjaan, dan hotel juga menyediakan akses Wi-Fi gratis. Pastikan untuk memeriksa dengan pihak yang berwenang di masing-masing lokasi untuk informasi lebih lanjut tentang ketersediaan dan cara mengakses Wi-Fi gratis di area publik tersebut.
+      </p>
+  </div>
+  <div class="text-container1">
+    <h1>Apakah kualitas jaringan internet di Indonesia konsisten di seluruh wilayah?</h1>
+    <p>
+      Meskipun konektivitas internet di Indonesia semakin berkembang, masih terdapat beberapa daerah yang mungkin mengalami kendala dalam hal jaringan dan kecepatan internet. Beberapa daerah terpencil atau pedalaman mungkin memiliki akses internet yang terbatas.
+    </p>
+</div>
+<div class="text-container1">
+  <h1>Mengapa penting untuk memperhatikan keamanan saat menggunakan internet?</h1>
+  <p>
+    Penting untuk memperhatikan keamanan saat menggunakan internet, terutama saat terhubung ke Wi-Fi publik. Pengguna disarankan untuk menggunakan VPN (Virtual Private Network) dan menjaga informasi pribadi mereka agar tetap aman saat berselancar di internet.
+  </p>
+</div>
+<div class="text-container1">
+  <h1>Bagaimana Saya Bisa Tetap Terhubung Sepanjang Waktu di Indonesia?</h1>
+  <p>
+    Anda bisa pertimbangkan sewa Pocket Wi-Fi untuk tetap terhubung di Indonesia. Dengan layanan ini, Anda dapat memiliki akses internet di mana saja dan kapan saja. Pesan online, dan perangkat akan dikirimkan atau diambil di tempat tujuan Anda. Alternatifnya, Anda bisa mendapatkan kartu SIM lokal yang lebih ekonomis dan praktis selama kunjungan Anda di Indonesia. Dengan banyaknya paket data yang tersedia, Anda bisa tetap terhubung dengan mudah tanpa harus mencari hotspot Wi-Fi. Tetap berhubungan dengan dunia luar jarang menjadi masalah di Indonesia karena ponsel adalah barang lumrah yang dimiliki hampir semua orang. Mendapatkan kartu SIM lokal selama tinggal di Indonesia adalah pilihan yang lebih ekonomis dan praktis.
+  </p>
+</div>
+<div class="text-container1">
+  <h1>Bagaimana Cara Mendapatkan Kartu SIM Lokal?</h1>
+  <p>
+    Anda bisa menemukan Kartu SIM di bandara, di mana beberapa booth penyedia perusahaan telepon seluler lokal tersedia. Di sana, Anda dapat memilih dari berbagai penyedia seperti Telkomsel, XL, Smartfren, 3/Tri, Axis, Indosat/IM3, dan lainnya. Harga untuk kartu SIM ini bervariasi, mulai dari Rp 10.000. Selain bandara, Anda juga dapat menemukan gerai penyedia layanan telekomunikasi ini di pusat perbelanjaan, stasiun kereta api, dan pusat kota. Pastikan untuk membawa dokumen identifikasi yang diperlukan saat membeli kartu SIM.
+  </p>
+</div>
+<div class="text-container1">
+  <h1>Bagaimana Cara Daftar Kartu SIM Indonesia?</h1>
+  <p>
+    Orang asing yang ingin mendaftar Kartu SIM Indonesia perlu memiliki dokumen identifikasi seperti Paspor, KITAS, atau KITAP. KITAS dan KITAP khususnya diperuntukkan bagi pengunjung dengan masa tinggal jangka panjang. Setelah memilih penyedia layanan dan paket yang diinginkan, petugas di booth penyedia akan membantu Anda melalui proses registrasi kartu SIM. Pastikan untuk membawa dokumen identifikasi yang diperlukan dan siapkan diri untuk mengisi formulir pendaftaran sesuai dengan persyaratan yang berlaku.
+  </p>
+</div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!----------------------------- FOOTER SECTION ----------------------------->
+  <section class="Footer">
+    <div class="footer-box">
+      <h3>Services</h3>
+      <a href="#">Email Marketing</a>
+      <a href="">Campaigns</a>
+      <a href="#">Brandings</a>
+      <a href="#">Offline</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Services</h3>
+      <a href="#">Our story</a>
+      <a href="">Benefits</a>
+      <a href="#">Team</a>
+      <a href="#">Careers</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Services</h3>
+      <a href="#">Help</a>
+      <a href="">FAQ</a>
+      <a href="#">Contact us</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Social</h3>
+      <div class="Social">
+        <a href="#"><i class="ri-instagram-fill"></i></a>
+        <a href="#"><i class="ri-twitter-fill"></i></a>
+        <a href="#"><i class="ri-facebook-fill"></i></a>
+        <a href="#"><i class="ri-Github-fill"></i></a>
+        <a href="#"><i class="ri-Snpachat-fill"></i></a>
+        <a href="#"><i class="ri-WhatsApp-fill"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!---------------------------- COPYRIGHT SECTION ----------------------------->
+  <!-- <div class="copyright">
+    <p>Copyright 2024 By Tours</p>
+  </div> -->
+
+    <!------------------------------- JAVASCRIPT --------------------------------->
+
+  <!------------------------------- JQuery Link ----------------------------------------->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+  <!---------------------------- Testimonial js Link ------------------------------------>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+
+
+  <!-- NAVBAR STICKYY -->
+  <script>
+    // Kode JavaScript untuk membuat header tetap
+    const header = document.querySelector("header");
+    window.addEventListener("scroll", function() {
+      header.classList.toggle("sticky", window.scrollY > 60)
+    });
+  </script>
+  
+
+
+
+
+
+<!--           LOGIN         -->
+<script>
+  document.getElementById('loginButton').onclick = function() {
+  document.getElementById('loginModal').style.display = "block";
+  document.getElementById('LoginForm').classList.add('active');
+  document.getElementById('RegisterForm').classList.remove('active');
+};
+
+document.getElementById('closeModal').onclick = function() {
+  document.getElementById('loginModal').style.display = "none";
+};
+
+window.onclick = function(event) {
+  if (event.target == document.getElementById('loginModal')) {
+    document.getElementById('loginModal').style.display = "none";
+  }
+};
+
+document.querySelector('.register-link').addEventListener('click', function(event) {
+  event.preventDefault();
+  document.getElementById('LoginForm').classList.remove('active');
+  document.getElementById('RegisterForm').classList.add('active');
+});
+
+document.querySelector('.login-link').addEventListener('click', function(event) {
+  event.preventDefault();
+  document.getElementById('RegisterForm').classList.remove('active');
+  document.getElementById('LoginForm').classList.add('active');
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Colokan & Listrik</title>
+	<link rel="stylesheet" type="text/css" href="plugs style.css">
+
+ <!---------------------------- Boxicons Link ------------------------------>
+ <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+ <!---------------------------- Remixicon Link ------------------------------>
+ <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
+ <!---------------------------- Google Fonts Link ------------------------------>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+ <!---------------------------- Font Awesome Icons Link ------------------------------>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+ <!------------------------------ Owl Carousel Links ------------------------------>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+
+ <style>
+  .page-transition {
+    animation: fadeOut 0.5s ease-in-out forwards;
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  body, h1, h2, h3, h4, h5, h6, p, a, span {
+    font-family: 'Open Sans', sans-serif;
+  }
+</style>
+
+</head> 
+
+<body>
+
+  <!---------------------- HEAD --------------------->
+  <div class="hero">
+
+    <!--------------------- NAVBAR SECTION --------------------->
+    
+    <header>
+      <!-- <a href="#" class="logo">Tou<span>rs.</span></a> -->
+      <a href="#" class="logo">
+        <img src="logo.png" alt="Logo" />
+    </a>
+          <ul class="navbar">
+          <li><a href="halaman.html" id="home">Beranda</a></li>
+          <li><a href="halaman.html" id="about">Tentang</a></li>
+          <li><a href="informasi umum.html" id="informasi">Informasi Umum</a></li>
+          <li class="login"><a href="#" id="loginButton">Masuk</a></li>
+      </ul>
+  </header>
+  </div>
+
+
+
+ <!-- Form Login Modal -->
+<div class="modal" id="loginModal">
+  <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <div class="tab">
+          <!--
+          <button class="tablinks active" onclick="openForm(event, 'LoginForm')">Login</button>
+          <button class="tablinks" onclick="openForm(event, 'RegisterForm')">Register</button>
+          -->
+      </div>
+      <div id="LoginForm" class="form-container active">
+          <div class="container-login">
+              <div class="main-box login">
+                  <h1>Masuk</h1>
+                  <form action="">
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-envelope"></i></span>
+                          <input type="email" required>
+                          <label>Email</label>
+                      </div>
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+                          <input type="password" required>
+                          <label>Kata sandi</label>
+                      </div>
+                      <div class="check">
+                          <label><input type="checkbox">Ingatkan saya!</label>
+                          <span class="forgot-password"><a href="#">Lupa kata sandi?</a></span>
+                      </div>
+                      <button type="submit" class="main-btn-login">Masuk</button>
+                      <div class="register">
+                          <p>Tidak punya akun?<a href="#" class="register-link"> Daftar</a></p>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+      <div id="RegisterForm" class="form-container">
+          <div class="container-login">
+              <div class="main-box register">
+                  <h1>Daftar</h1>
+                  <form action="">
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-user"></i></span>
+                          <input type="text" required>
+                          <label>Nama pengguna</label>
+                      </div>
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-envelope"></i></span>
+                          <input type="email" required>
+                          <label>Email</label>
+                      </div>
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+                          <input type="password" required>
+                          <label>Kata sandi</label>
+                      </div>
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+                          <input type="password" required>
+                          <label>Konfirmasi Kata sandi</label>
+                      </div>
+                      <div class="check">
+                          <label><input type="checkbox">Saya menerima semua syarat & ketentuan</label>
+                      </div>
+                      <button type="submit" class="main-btn">Daftar</button>
+                      <div class="register">
+                          <p>Sudah punya akun?<a href="#" class="login-link"> Masuk</a></p>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+      <!--------------------- HEAD SECTION --------------------->
+
+
+
+
+
+    <!-------- Artikel Wisata ---------------->
+    <div class="center-text2">
+      <h2>Colokan & Listrik</h2>
+        <span class="line"></span>
+    </div>
+    
+
+
+
+    
+
+
+
+
+
+    <div class="container">
+      <nav class="breadcrumb">
+          <!-- <a href="#">Asia</a> /
+          <a href="#">Thailand</a> / -->
+          <!-- <span>Bangkok</span> -->
+      </nav>
+
+
+
+      <!-- <h1>Bangkok</h1> -->
+      <div class="container-teks">
+      <p class="intro">
+        Sistem listrik dan colokan listrik di Indonesia memiliki beberapa karakteristik yang penting untuk diketahui bagi wisatawan atau pendatang yang berkunjung ke negara ini. Berikut adalah informasi umum tentang colokan dan listrik di Indonesia:
+        </p>
+      <!-- <a href="#" class="read-more">Read More</a> -->
+      <div class="info-section">
+        <!-- <div class="icon-container"> -->
+            <!-- <i class="fas fa-1 icon"></i> -->
+        </div>
+
+        <div class="text-container1">
+            <h1>Bagaimana standar tegangan dan kelistrikan di Indonesia?</h1>
+            <p>
+              Tegangan standar di Indonesia umumnya adalah 230 volt dengan frekuensi 50 Hz. Untuk pengguna perangkat elektronik dari negara dengan standar tegangan yang berbeda, seperti Amerika Serikat atau Kanada, diperlukan konverter tegangan untuk menghindari kerusakan perangkat. Meskipun beberapa perangkat dapat diisi daya dengan risiko minimal, lebih baik memilih opsi yang lebih aman dengan menggunakan konverter tegangan yang sesuai. Anda dapat menemukan konverter ini di toko listrik lokal di Indonesia atau secara online melalui platform seperti Amazon.
+            </p>
+        </div>
+        <div class="text-container1">
+          <h1>Apa jenis colokan listrik yang umum digunakan di Indonesia?</h1>
+          <p>
+            Kebanyakan colokan listrik di Indonesia menggunakan <strong>Tipe C dan F</strong>. Kedua jenis ini merupakan standar Eropa dengan soket 2 pin. Jika Anda datang dari negara yang menggunakan jenis soket yang berbeda, disarankan untuk membeli adaptor. Selain tersedia di Amazon, adaptor juga dapat ditemukan di sebagian besar minimarket lokal di seluruh Indonesia. <br>Berikut ini adalah contoh colokan listrik yang umum digunakan di Indonesia:         
+          </p>
+          <img src="plug1.png" class="plug-img">
+          <img src="plug2.png" class="plug-img">
+      </div>
+      <div class="text-container1">
+        <h1>Bagaimana kestabilan listrik di Indonesia?</h1>
+        <p>
+          Meskipun listrik di Indonesia umumnya stabil, terdapat daerah-daerah yang mungkin mengalami pemadaman listrik atau fluktuasi tegangan. Sebaiknya Anda selalu siap dengan peralatan cadangan seperti power bank atau lilin jika terjadi pemadaman listrik.
+        </p>
+    </div>
+    <div class="text-container1">
+      <h1>Apakah ada aturan tertentu terkait penggunaan listrik di hotel atau akomodasi di Indonesia?
+      </h1>
+      <p>
+        Beberapa hotel atau akomodasi mungkin memiliki aturan tertentu terkait penggunaan listrik, seperti mematikan AC atau lampu saat tidak digunakan untuk menghemat energi. Pastikan untuk mematuhi aturan yang berlaku di tempat Anda menginap.
+      </p>
+  </div>
+  <div class="text-container1">
+    <h1>Dimana saya bisa mengisi daya gadget saya di Indonesia?</h1>
+    <p>
+      Anda dapat menemukan stopkontak hampir di semua restoran di Indonesia, terutama di tempat-tempat wisata. Semua hotel dan bandara menyediakan stopkontak dan colokan yang dapat Anda gunakan secara gratis. Di kereta, stopkontak listrik tersedia untuk semua kelas (ekonomi dan bisnis), dan sebagian besar sarana transportasi umum juga dilengkapi dengan port USB untuk mengisi daya ponsel Anda.
+    </p>
+</div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!----------------------------- FOOTER SECTION ----------------------------->
+  <section class="Footer">
+    <div class="footer-box">
+      <h3>Services</h3>
+      <a href="#">Email Marketing</a>
+      <a href="">Campaigns</a>
+      <a href="#">Brandings</a>
+      <a href="#">Offline</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Services</h3>
+      <a href="#">Our story</a>
+      <a href="">Benefits</a>
+      <a href="#">Team</a>
+      <a href="#">Careers</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Services</h3>
+      <a href="#">Help</a>
+      <a href="">FAQ</a>
+      <a href="#">Contact us</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Social</h3>
+      <div class="Social">
+        <a href="#"><i class="ri-instagram-fill"></i></a>
+        <a href="#"><i class="ri-twitter-fill"></i></a>
+        <a href="#"><i class="ri-facebook-fill"></i></a>
+        <a href="#"><i class="ri-Github-fill"></i></a>
+        <a href="#"><i class="ri-Snpachat-fill"></i></a>
+        <a href="#"><i class="ri-WhatsApp-fill"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!---------------------------- COPYRIGHT SECTION ----------------------------->
+  <!-- <div class="copyright">
+    <p>Copyright 2024 By Tours</p>
+  </div> -->
+
+    <!------------------------------- JAVASCRIPT --------------------------------->
+
+  <!------------------------------- JQuery Link ----------------------------------------->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+  <!---------------------------- Testimonial js Link ------------------------------------>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+
+
+  <!-- NAVBAR STICKYY -->
+  <script>
+    // Kode JavaScript untuk membuat header tetap
+    const header = document.querySelector("header");
+    window.addEventListener("scroll", function() {
+      header.classList.toggle("sticky", window.scrollY > 60)
+    });
+  </script>
+  
+
+
+
+
+
+<!--           LOGIN         -->
+<script>
+  document.getElementById('loginButton').onclick = function() {
+  document.getElementById('loginModal').style.display = "block";
+  document.getElementById('LoginForm').classList.add('active');
+  document.getElementById('RegisterForm').classList.remove('active');
+};
+
+document.getElementById('closeModal').onclick = function() {
+  document.getElementById('loginModal').style.display = "none";
+};
+
+window.onclick = function(event) {
+  if (event.target == document.getElementById('loginModal')) {
+    document.getElementById('loginModal').style.display = "none";
+  }
+};
+
+document.querySelector('.register-link').addEventListener('click', function(event) {
+  event.preventDefault();
+  document.getElementById('LoginForm').classList.remove('active');
+  document.getElementById('RegisterForm').classList.add('active');
+});
+
+document.querySelector('.login-link').addEventListener('click', function(event) {
+  event.preventDefault();
+  document.getElementById('RegisterForm').classList.remove('active');
+  document.getElementById('LoginForm').classList.add('active');
+});
+</script>
+</body>
+</html>

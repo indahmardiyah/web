@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <link rel="stylesheet" href="login-style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">Tou<span>rs.</span></a>
+        <ul class="navbar">
+            <li><a href="halaman.html" id="home">Beranda</a></li>
+            <li><a href="about.html" id="about">Tentang</a></li>
+            <li><a href="Wisata.html" id="wisata">Wisata</a></li>
+            <li><a href="login.html" id="login">Masuk</a></li>
+        </ul>
+    </header>
+    
+
+    <div class="container">
+        <div class="main-box login">
+            <h1>Masuk</h1>
+            <form action="">
+                <div class="input-box">
+                    <span class="icon"><i class="bx bxs-envelope"></i></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+                    <input type="password" required>
+                    <label>Kata sandi</label>
+                </div>
+                <div class="check">
+                    <label><input type="checkbox">Ingatkan saya!</label>
+                    <a href="#">Lupa kata sandi?</a>
+                </div>
+                <button type="submit" class="main-btn">Masuk</button>
+                <div class="register">
+                    <p>Tidak memiliki akun?<a href="#" class="register-link"> Daftar</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="main-box register">
+            <h1>Daftar</h1>
+            <form action="">
+                <div class="input-box">
+                    <span class="icon"><i class="bx bxs-user"></i></span>
+                    <input type="text" required>
+                    <label>Nama pengguna</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="bx bxs-envelope"></i></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+                    <input type="password" required>
+                    <label>Kata sandi</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+                    <input type="verification password" required>
+                    <label>Konfirmasi Kata sandi</label>
+                </div>
+                <div class="check">
+                    <label><input type="checkbox">Saya menerima semua syarat & ketentuan</label>
+                </div>
+                <button type="submit" class="main-btn">Daftar</button>
+                <div class="register">
+                    <p>Sudah punya akun?<a href="#" class="login-link"> Masuk</a></p>
+                </div>
+            </form>
+        </div>
+        <!-- <span class="close-icon">
+            <div class="bx bx-x"></div>
+        </span> -->
+    </div>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll(".navbar a");
+
+    // Tambahkan event listener untuk setiap link navbar
+    links.forEach(link => {
+        link.addEventListener("click", function (event) {
+            // Menghapus kelas 'active' dari semua link navbar
+            links.forEach(link => {
+                link.classList.remove("active");
+            });
+
+            // Menambahkan kelas 'active' ke link yang diklik
+            this.classList.add("active");
+        });
+    });
+
+    // Tambahkan kelas 'active' ke link sesuai dengan halaman yang sedang dibuka
+    const currentLocation = window.location.href;
+    links.forEach(link => {
+        if (link.href === currentLocation) {
+            link.classList.add("active");
+        }
+    });
+});
+    </script>
+
+    <script>
+        const container = document.querySelector('.container');
+        const loginLink = document.querySelector('.login-link');
+        const registerLink = document.querySelector('.register-link');
+
+        registerLink.addEventListener('click', () => {
+            container.classList.add('active');
+        });
+
+        loginLink.addEventListener('click', () => {
+            container.classList.remove('active');
+        });
+
+        const btnPopup= document.querySelector('.btnLogin-popup');
+
+        btnPopup.addEventListener('click', () => {
+            container.classList.add('active-popup')
+        })
+
+        const closeIcon = document.querySelector('.close-icon' );
+
+        closeIcon.addEventListener('click', ()=> {
+        container.classList.remove('active-popup' );
+        });
+    </script>
+
+<script>
+    // Fungsi untuk mengarahkan ke halaman yang diinginkan
+    function redirectTo(halaman) {
+        window.location.href = halaman;
+    }
+
+    // Event listener untuk tombol login
+    document.querySelector('.main-box.login button[type="submit"]').addEventListener('click', function(event) {
+        event.preventDefault(); // Mencegah form dari submit
+        redirectTo('halaman.html'); // Ganti 'index.html' dengan halaman login yang diinginkan
+    });
+
+    // Event listener untuk tombol register
+    document.querySelector('.main-box.register button[type="submit"]').addEventListener('click', function(event) {
+        event.preventDefault(); // Mencegah form dari submit
+        redirectTo('halaman.html'); // Ganti 'halaman.html' dengan halaman register yang diinginkan
+    });
+</script>
+
+</body>
+</html>

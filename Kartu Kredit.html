@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kartu Kredit</title>
+	<link rel="stylesheet" type="text/css" href="Kartu Kredit style.css">
+
+ <!---------------------------- Boxicons Link ------------------------------>
+ <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+ <!---------------------------- Remixicon Link ------------------------------>
+ <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
+ <!---------------------------- Google Fonts Link ------------------------------>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+ <!---------------------------- Font Awesome Icons Link ------------------------------>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+ <!------------------------------ Owl Carousel Links ------------------------------>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+
+ <style>
+  .page-transition {
+    animation: fadeOut 0.5s ease-in-out forwards;
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  body, h1, h2, h3, h4, h5, h6, p, a, span {
+    font-family: 'Open Sans', sans-serif;
+  }
+</style>
+
+</head> 
+
+<body>
+
+  <!---------------------- HEAD --------------------->
+  <div class="hero">
+
+    <!--------------------- NAVBAR SECTION --------------------->
+    
+    <header>
+      <!-- <a href="#" class="logo">Tou<span>rs.</span></a> -->
+      <a href="#" class="logo">
+        <img src="logo.png" alt="Logo" />
+    </a>
+          <ul class="navbar">
+          <li><a href="halaman.html" id="home">Beranda</a></li>
+          <li><a href="halaman.html" id="about">Tentang</a></li>
+          <li><a href="informasi umum.html" id="informasi">Informasi Umum</a></li>
+          <li class="login"><a href="#" id="loginButton">Masuk</a></li>
+      </ul>
+  </header>
+  </div>
+
+
+
+ <!-- Form Login Modal -->
+<div class="modal" id="loginModal">
+  <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <div class="tab">
+          <!--
+          <button class="tablinks active" onclick="openForm(event, 'LoginForm')">Login</button>
+          <button class="tablinks" onclick="openForm(event, 'RegisterForm')">Register</button>
+          -->
+      </div>
+      <div id="LoginForm" class="form-container active">
+          <div class="container-login">
+              <div class="main-box login">
+                  <h1>Masuk</h1>
+                  <form action="">
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-envelope"></i></span>
+                          <input type="email" required>
+                          <label>Email</label>
+                      </div>
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+                          <input type="password" required>
+                          <label>Kata sandi</label>
+                      </div>
+                      <div class="check">
+                          <label><input type="checkbox">Ingatkan saya!</label>
+                          <span class="forgot-password"><a href="#">Lupa kata sandi?</a></span>
+                      </div>
+                      <button type="submit" class="main-btn-login">Masuk</button>
+                      <div class="register">
+                          <p>Tidak punya akun?<a href="#" class="register-link"> Daftar</a></p>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+      <div id="RegisterForm" class="form-container">
+          <div class="container-login">
+              <div class="main-box register">
+                  <h1>Daftar</h1>
+                  <form action="">
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-user"></i></span>
+                          <input type="text" required>
+                          <label>Nama pengguna</label>
+                      </div>
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-envelope"></i></span>
+                          <input type="email" required>
+                          <label>Email</label>
+                      </div>
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+                          <input type="password" required>
+                          <label>Kata sandi</label>
+                      </div>
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+                          <input type="password" required>
+                          <label>Konfirmasi Kata sandi</label>
+                      </div>
+                      <div class="check">
+                          <label><input type="checkbox">Saya menerima semua syarat & ketentuan</label>
+                      </div>
+                      <button type="submit" class="main-btn">Daftar</button>
+                      <div class="register">
+                          <p>Sudah punya akun?<a href="#" class="login-link"> Masuk</a></p>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+      <!--------------------- HEAD SECTION --------------------->
+
+
+
+
+
+    <!-------- Artikel Wisata ---------------->
+    <div class="center-text2">
+      <h2>Kartu Kredit</h2>
+        <span class="line"></span>
+    </div>
+    
+
+
+
+    
+
+
+
+
+
+    <div class="container">
+      <nav class="breadcrumb">
+          <!-- <a href="#">Asia</a> /
+          <a href="#">Thailand</a> / -->
+          <!-- <span>Bangkok</span> -->
+      </nav>
+
+
+
+      <!-- <h1>Bangkok</h1> -->
+      <div class="container-teks">
+      <p class="intro">
+        Kartu kredit adalah alat pembayaran yang memungkinkan pemegangnya untuk melakukan transaksi pembelian atau penarikan tunai dengan meminjam uang dari penerbit kartu, seperti bank atau lembaga keuangan. Pemegang kartu kredit harus membayar kembali jumlah yang dipinjam tersebut, biasanya dengan tambahan bunga dan biaya tertentu jika tidak dilunasi dalam jangka waktu tertentu.
+        </p>
+      <!-- <a href="#" class="read-more">Read More</a> -->
+      <div class="info-section">
+        <!-- <div class="icon-container"> -->
+            <!-- <i class="fas fa-1 icon"></i> -->
+        </div>
+
+        <div class="text-container1">
+            <h1>Kartu Kredit atau Debit Apa yang dapat diterima di Indonesia?</h1>
+            <p>
+              Untuk menarik uang tunai di Indonesia, ATM tersebar luas di kota-kota besar dan daerah wisata. Kartu-kartu dengan jaringan Cirrus, Maestro, dan Plus umumnya diterima di sebagian besar ATM bank besar di Indonesia. Logo Cirrus dan Maestro terkait dengan kartu-kartu Mastercard, sedangkan logo Plus terkait dengan kartu-kartu Visa. Pastikan untuk memeriksa apakah logo Cirrus, Maestro, atau Plus ditampilkan di mesin ATM sebelum memasukkan kartu Anda. <br>
+              <br> Selain itu, pemegang kartu JCB dapat menarik uang tunai di bank afiliasi di Indonesia seperti BNI (Bank Negara Indonesia), CIMB Niaga, Mandiri, dan BRI (Bank Rakyat Indonesia). Pastikan untuk memeriksa apakah logo JCB atau Cirrus terpampang di ATM sebelum melakukan penarikan.<br>
+              <br>Pemegang kartu American Express dapat menggunakan fasilitas cash express dan menarik uang tunai di ATM Bank Danamon di seluruh Indonesia.<br>
+              <br>Meskipun membawa kartu kredit atau debit adalah pilihan yang praktis saat bepergian, disarankan untuk memiliki uang tunai, terutama ketika berada di daerah terpencil atau saat mengunjungi pasar tradisional. Dengan memiliki uang tunai, Anda akan lebih siap untuk bertransaksi di tempat-tempat yang mungkin tidak menerima kartu kredit atau debit. Selamat menikmati liburan Anda di Indonesia!<br>
+
+            </p>
+        </div>
+        <div class="text-container1">
+          <h1>Dari ATM mana saya dapat menarik Uang Tunai?</h1>
+          <p>
+            Di Indonesia, sebagian besar jaringan kartu kredit internasional dapat diterima di kota-kota besar dan tempat wisata seperti Jakarta, Bandung, Bali, Surabaya, Medan, Yogyakarta, dan lainnya. Kartu-kartu seperti Visa dan Mastercard umumnya diterima di seluruh merchant. Selain itu, kartu-kartu seperti JCB (Japan Credit Bureau) juga dapat diterima karena berafiliasi dengan beberapa bank ternama di Indonesia seperti BNI (Bank Negara Indonesia), CIMB Niaga, Mandiri, BRI (Bank Rakyat Indonesia), dan lainnya. <br>
+            <br>Meskipun American Express (Amex) juga dapat diterima, namun Amex memiliki lebih sedikit bank lokal yang terafiliasi di Indonesia. Saat ini, Bank Danamon merupakan salah satu bank lokal yang terafiliasi dengan Amex.<br>
+            <br>Tetapi perlu diingat, ada kemungkinan bahwa toko-toko tertentu mungkin tidak menampilkan simbol kartu yang mereka terima, jadi penting untuk menanyakan kepada penjual di toko sebelum menggunakan kartu Anda apakah kartu Anda dapat diterima atau tidak.<br>
+
+          </p>
+      </div>
+      <div class="text-container1">
+        <h1>Berapa Banyak Uang Tunai yang Dapat Saya Bawa ke Indonesia?</h1>
+        <p>
+            Disarankan untuk membawa jumlah uang tunai yang sesuai dengan kebutuhan Anda selama perjalanan ke Indonesia, mengingat sulitnya menemukan ATM di kota-kota kecil atau daerah terpencil. Batas jumlah uang tunai yang dapat dibawa tanpa melaporkannya kepada Bea Cukai Indonesia adalah sebesar Rp100.000.000,00 (seratus juta rupiah) atau mata uang lain yang setara dengan jumlah tersebut. Namun lebih dari itu harus dilaporkan. Selain uang tunai, kartu prabayar mata uang asing juga bisa menjadi alternatif, tetapi pastikan untuk memahami kebijakan dan biayanya. Dengan persiapan yang matang terkait keuangan, Anda dapat menikmati liburan Anda tanpa khawatir tentang masalah pembayaran.
+        </p>
+    </div>
+    <div class="text-container1">
+      <h1>Bagaimana cara menjaga keamanan dan privasi informasi ketika menggunakan kartu kredit secara daring atau di tempat umum?</h1>
+      <p>
+        Untuk menjaga keamanan saat menggunakan kartu kredit, hindari membagikan informasi sensitif, periksa keamanan situs web saat bertransaksi daring, hindari menggunakan Wi-Fi publik, dan periksa tagihan secara berkala untuk mendeteksi transaksi yang mencurigakan.
+      </p>
+  </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!----------------------------- FOOTER SECTION ----------------------------->
+  <section class="Footer">
+    <div class="footer-box">
+      <h3>Services</h3>
+      <a href="#">Email Marketing</a>
+      <a href="">Campaigns</a>
+      <a href="#">Brandings</a>
+      <a href="#">Offline</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Services</h3>
+      <a href="#">Our story</a>
+      <a href="">Benefits</a>
+      <a href="#">Team</a>
+      <a href="#">Careers</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Services</h3>
+      <a href="#">Help</a>
+      <a href="">FAQ</a>
+      <a href="#">Contact us</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Social</h3>
+      <div class="Social">
+        <a href="#"><i class="ri-instagram-fill"></i></a>
+        <a href="#"><i class="ri-twitter-fill"></i></a>
+        <a href="#"><i class="ri-facebook-fill"></i></a>
+        <a href="#"><i class="ri-Github-fill"></i></a>
+        <a href="#"><i class="ri-Snpachat-fill"></i></a>
+        <a href="#"><i class="ri-WhatsApp-fill"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!---------------------------- COPYRIGHT SECTION ----------------------------->
+  <!-- <div class="copyright">
+    <p>Copyright 2024 By Tours</p>
+  </div> -->
+
+    <!------------------------------- JAVASCRIPT --------------------------------->
+
+  <!------------------------------- JQuery Link ----------------------------------------->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+  <!---------------------------- Testimonial js Link ------------------------------------>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+
+
+  <!-- NAVBAR STICKYY -->
+  <script>
+    // Kode JavaScript untuk membuat header tetap
+    const header = document.querySelector("header");
+    window.addEventListener("scroll", function() {
+      header.classList.toggle("sticky", window.scrollY > 60)
+    });
+  </script>
+  
+
+
+
+
+
+<!--           LOGIN         -->
+<script>
+  document.getElementById('loginButton').onclick = function() {
+  document.getElementById('loginModal').style.display = "block";
+  document.getElementById('LoginForm').classList.add('active');
+  document.getElementById('RegisterForm').classList.remove('active');
+};
+
+document.getElementById('closeModal').onclick = function() {
+  document.getElementById('loginModal').style.display = "none";
+};
+
+window.onclick = function(event) {
+  if (event.target == document.getElementById('loginModal')) {
+    document.getElementById('loginModal').style.display = "none";
+  }
+};
+
+document.querySelector('.register-link').addEventListener('click', function(event) {
+  event.preventDefault();
+  document.getElementById('LoginForm').classList.remove('active');
+  document.getElementById('RegisterForm').classList.add('active');
+});
+
+document.querySelector('.login-link').addEventListener('click', function(event) {
+  event.preventDefault();
+  document.getElementById('RegisterForm').classList.remove('active');
+  document.getElementById('LoginForm').classList.add('active');
+});
+</script>
+</body>
+</html>
