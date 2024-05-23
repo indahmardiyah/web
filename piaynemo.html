@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Piaynemo</title>
+	<link rel="stylesheet" type="text/css" href="piaynemo style.css">
+
+ <!---------------------------- Boxicons Link ------------------------------>
+ <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+ <!---------------------------- Remixicon Link ------------------------------>
+ <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
+ <!---------------------------- Google Fonts Link ------------------------------>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+ <!---------------------------- Font Awesome Icons Link ------------------------------>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+ <!------------------------------ Owl Carousel Links ------------------------------>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+
+
+<style>
+    .page-transition {
+      animation: fadeOut 0.5s ease-in-out forwards;
+    }
+
+    @keyframes fadeOut {
+      from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
+      }
+    }
+    body, h1, h2, h3, h4, h5, h6, p, a, span {
+      font-family: 'Open Sans', sans-serif;
+    }
+  </style>
+    <style>
+      /*        GALLERY       */
+      .wrapper {
+          position: relative;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          display: flex;
+          align-items: center;
+      }
+
+      .carousel {
+          display: flex;
+          overflow-x: auto;
+          scroll-snap-type: x mandatory;
+      }
+
+      .carousel::-webkit-scrollbar {
+          display: none;
+      }
+
+      .carousel img {
+          flex: none;
+          width: 250px;
+          height: auto;
+          scroll-snap-align: start;
+          cursor: pointer;
+          margin-right: 10px;
+          border-radius: 8px;
+      }
+
+      /*   GALLERY  MODAL    */
+      .modal {
+          display: none;
+          position: fixed;
+          z-index: 1000;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          overflow: auto;
+          background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      .modal-content {
+          margin: 10% auto;
+          display: block;
+          width: auto;
+          max-width: 80%;
+          max-height: 80%;
+      }
+
+      .close {
+          color: #aaa;
+          position: absolute;
+          top: 10px;
+          right: 25px;
+          font-size: 35px;
+          font-weight: bold;
+          transition: 0.3s;
+          cursor: pointer;
+      }
+
+      .close:hover,
+      .close:focus {
+          color: #fff;
+          text-decoration: none;
+      }
+
+      .modal-img {
+          display: block;
+          width: 100%;
+          height: auto;
+      }
+  </style>
+</head> 
+
+<body>
+
+  <!------------------------- BACKGROUND  ---------------------->
+  <div class="hero"></div>
+
+    <!--------------------- NAVBAR SECTION --------------------->
+    <header>
+      <a href="#" class="logo">
+        <img src="logo.png" alt="Logo" />
+    </a>
+          <ul class="navbar">
+          <li><a href="halaman.html" id="home">Beranda</a></li>
+          <li><a href="halaman.html" id="about">Tentang</a></li>
+          <li><a href="informasi umum.html" id="informasi">Informasi umum</a></li>
+          <li class="login"><a href="#" id="loginButton">Masuk</a></li>
+      </ul>
+  </header>
+
+
+
+    <!--------------------- LOGIN SECTION --------------------->
+    <!-- <div class="modal" id="loginModal">
+  <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <div class="tab">
+      </div>
+      <div id="LoginForm" class="form-container active">
+          <div class="container-login">
+              <div class="main-box login">
+                  <h1>Masuk</h1>
+                  <form action="">
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-envelope"></i></span>
+                          <input type="email" required>
+                          <label>Email</label>
+                      </div>
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+                          <input type="password" required>
+                          <label>Kata sandi</label>
+                      </div>
+                      <div class="check">
+                          <label><input type="checkbox">Ingatkan saya!</label>
+                          <span class="forgot-password"><a href="#">Lupa kata sandi?</a></span>
+                      </div>
+                      <button type="submit" class="main-btn-login">Masuk</button>
+                      <div class="register">
+                          <p>Tidak punya akun?<a href="#" class="register-link"> Daftar</a></p>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+      <div id="RegisterForm" class="form-container">
+          <div class="container-login">
+              <div class="main-box register">
+                  <h1>Daftar</h1>
+                  <form action="">
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-user"></i></span>
+                          <input type="text" required>
+                          <label>Nama pengguna</label>
+                      </div>
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-envelope"></i></span>
+                          <input type="email" required>
+                          <label>Email</label>
+                      </div>
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+                          <input type="password" required>
+                          <label>Kata sandi</label>
+                      </div>
+                      <div class="input-box">
+                          <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+                          <input type="password" required>
+                          <label>Konfirmasi Kata sandi</label>
+                      </div>
+                      <div class="check">
+                          <label><input type="checkbox">Saya menerima semua syarat & ketentuan</label>
+                      </div>
+                      <button type="submit" class="main-btn">Daftar</button>
+                      <div class="register">
+                          <p>Sudah punya akun?<a href="#" class="login-link"> Masuk</a></p>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</div> -->
+
+
+
+
+      <!--------------------- HEAD SECTION --------------------->
+    <div class="container-head">
+      <h1>Raja Ampat</h1>
+      <p class="text-head">
+        Raja Ampat adalah potongan surga tropis di ujung timur Indonesia. Di sini, Anda akan menemukan keindahan alam yang menakjubkan, baik di bawah laut dengan terumbu karang yang kaya akan kehidupan, maupun di atas permukaan dengan pulau-pulau pasir putih yang memikat. Setiap sudutnya memancarkan pesona alami yang tiada tara, mengundang Anda untuk menjelajahi dan merasakan keajaiban dunia yang nyata.
+      </p>
+      <!-- <a href="#" class="read-more" onclick="toggleReadMore(event)">Read More</a> -->
+    </div>
+
+
+
+      <!-- !------------------- GALLERY -------------------> 
+      <div class="wrapper">
+        <i id="left" class="fa-solid fa-angle-left"></i>
+        <div class="carousel" id="carousel">
+            <img src="Piaynemo1.jpg" alt="img" draggable="false">
+            <img src="Piaynemo2.jpg" alt="img" draggable="false">
+            <img src="Piaynemo3.jpg" alt="img" draggable="false">
+            <img src="Piaynemo4.jpg" alt="img" draggable="false">
+            <img src="Piaynemo5.jpg" alt="img" draggable="false">
+            <img src="Piaynemo6.jpg" alt="img" draggable="false">
+            <img src="Piaynemo7.jpg" alt="img" draggable="false">
+        </div>
+        <i id="right" class="fa-solid fa-angle-right"></i>
+      </div>
+      
+      <!-- Modal -->
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+      </div>
+
+
+
+    <!-------------------- TESTIMONIAL SECTION ------------------------->
+    <section id="Testimonial">
+        <div class="testimonials-section">
+        <div class="text-review">
+        <div class="header-review-teks">
+        <p>Testimonials & reviews</p>
+        <h2>Apa yang Mereka Katakan?</h2>
+        </div>
+        </div>
+    
+    <div class="owl-carousel owl-theme testimonials-container">
+    <div class="item testimonial-card">
+      <main class="test-card-body">
+        <p>"Situs web wisata ini luar biasa! Dengan mudah saya temukan destinasi favorit di Indonesia. Fitur langsung lokasinya sangat membantu. Terima kasih!"</p>
+        <div class="ratings">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+      </main>
+      <div class="profile">
+        <div class="profile-image">
+          <img src="image1.jpg">
+        </div>
+        <div class="profile-desc">
+          <span>Adam</span>
+          <span>adams3@gmail.com</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="item testimonial-card">
+      <main class="test-card-body">
+        <p>"Tidak puas dengan layanan website ini. Lokasi wisata yang ditampilkan tidak akurat dan informasi yang disajikan kurang lengkap. Perlu banyak perbaikan."</p>
+        <div class="ratings">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+      </main>
+      <div class="profile">
+        <div class="profile-image">
+          <img src="image2.jpg">
+        </div>
+        <div class="profile-desc">
+          <span>Anita</span>
+          <span>Anitaa90@gmail.com</span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="item testimonial-card">
+      <main class="test-card-body">
+        <p>"Saya sangat senang menemukan website ini! Dengan beberapa klik, saya bisa temukan destinasi wisata di Indonesia yang saya inginkan. Sangat praktis dan informatif!"</p>
+        <div class="ratings">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+      </main>
+      <div class="profile">
+        <div class="profile-image">
+          <img src="image3.jpg">
+        </div>
+        <div class="profile-desc">
+          <span>Bambang</span>
+          <span>Bambanguhuy@gmail.com</span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="item testimonial-card">
+      <main class="test-card-body">
+        <p>"Wow! Saya terkesan dengan kemudahan dalam menemukan destinasi wisata di Indonesia melalui website ini. Sangat direkomendasikan!"</p>
+        <div class="ratings">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+      </main>
+      <div class="profile">
+        <div class="profile-image">
+          <img src="image4.jpg">
+        </div>
+        <div class="profile-desc">
+          <span>Anisa</span>
+          <span>Anisay@gmail.com</span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="item testimonial-card">
+      <main class="test-card-body">
+        <p>"Terima kasih atas website ini! Saya bisa dengan cepat menemukan destinasi wisata di Indonesia dan merencanakan liburan impian saya. Sangat direkomendasikan!"</p>
+        <div class="ratings">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+      </main>
+      <div class="profile">
+        <div class="profile-image">
+          <img src="image5.jpg">
+        </div>
+        <div class="profile-desc">
+          <span>Jessica</span>
+          <span>Jessik@gmail.com</span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="item testimonial-card">
+      <main class="test-card-body">
+        <p>"Informasi yang disajikan tidak akurat dan tidak terstruktur dengan baik. Saya merasa sangat kecewa dengan pengalaman menggunakan website ini. Tidak direkomendasikan."</p>
+        <div class="ratings">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+      </main>
+      <div class="profile">
+        <div class="profile-image">
+          <img src="image6.jpg">
+        </div>
+        <div class="profile-desc">
+          <span>Dani</span>
+          <span>Daniii@gmail.com</span>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    </section>            
+    
+  
+    
+
+
+
+
+
+
+
+    <!---------------------- ULASAN SECTION --------------------->
+  <div class="center-text-ulasan">
+    <h2>Tuliskan pendapatmu disini!</h2>
+    <p>Beri Ulasan tentang Destinasi Wisata yang kamu kunjungi dan bantu Traveler lain untuk memilih
+        <strong>Tempat Liburan Terbaik!</strong></p>
+    </div>
+
+
+    <!-- RATING -->
+      <div class="feedback-background2">
+        <div class="feedback-container2">
+            <form class="feedback-form2">
+                <h2>Berikan Ulasan Anda</h2>
+                <p>Apa pendapat Anda tentang pengalaman Anda mengunjungi destinasi wisata ini?</p>
+                <div class="star-widget2">
+                    <input type="radio" name="rate" id="rate-5">
+                    <label for="rate-5" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-4">
+                    <label for="rate-4" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-3">
+                    <label for="rate-3" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-2">
+                    <label for="rate-2" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-1">
+                    <label for="rate-1" class="fas fa-star"></label>
+                </div>
+                <textarea placeholder="Tulisan pendapatmu disini...."></textarea>
+                <div class="buttons2">
+                    <button type="submit">Kirim</button>
+                    <button type="button">Batalkan</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+  <!----------------------------- FOOTER SECTION ----------------------------->
+  <section class="Footer">
+    <div class="footer-box">
+      <h3>Services</h3>
+      <a href="#">Email Marketing</a>
+      <a href="">Campaigns</a>
+      <a href="#">Brandings</a>
+      <a href="#">Offline</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Services</h3>
+      <a href="#">Our story</a>
+      <a href="">Benefits</a>
+      <a href="#">Team</a>
+      <a href="#">Careers</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Services</h3>
+      <a href="#">Help</a>
+      <a href="">FAQ</a>
+      <a href="#">Contact us</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Social</h3>
+      <div class="Social">
+        <a href="#"><i class="ri-instagram-fill"></i></a>
+        <a href="#"><i class="ri-twitter-fill"></i></a>
+        <a href="#"><i class="ri-facebook-fill"></i></a>
+        <a href="#"><i class="ri-Github-fill"></i></a>
+        <a href="#"><i class="ri-Snpachat-fill"></i></a>
+        <a href="#"><i class="ri-WhatsApp-fill"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- <div class="copyright">
+    <p>Copyright 2024 By Tours</p>
+  </div> -->
+
+
+
+<!------------------------------- JAVASCRIPT --------------------------------->
+
+  <!------------------------------- JQuery Link ----------------------------------------->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+  <!---------------------------- Testimonial js Link ------------------------------------>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+  <!-------------- ANIMASI HALAMAN ---------------->
+  <!-- <script src="assets/js/scrollreveal.min.js"></script>
+  <script>
+    const sr = ScrollReveal({
+      origin: 'top',
+      distance:'60px',
+      duration: 3000,
+      delay: 400,
+    });
+
+    sr.reveal(`.container-2`,{delay: 600, distance: '100px', interval: 100});
+    sr.reveal(`.container`,{delay: 600, distance: '100px', interval: 100});
+    sr.reveal(`.image-caption, .background-image, .search-bar2`, {origin: 'left'});
+    sr.reveal(`.card-container, .show-more `, {origin: 'bottom',});
+    sr.reveal(`.tour`, {origin: 'bottom',});
+    sr.reveal(`.content`, {origin: 'bottom',});
+    sr.reveal(`.card-content`, {origin: 'bottom',});
+    sr.reveal(`.heading`,{delay: 600, distance: '100px', interval: 100});
+    sr.reveal(`.search-container`, {origin: 'bottom',});
+    sr.reveal(`.Footer`, {origin: 'bottom',});
+    sr.reveal(`.holiday-img`, {origin: 'left',});
+    sr.reveal(`.holiday-text`, {origin: 'right',});
+
+  </script> -->
+
+
+
+<!-------------------------- LOGIN ------------------------------->
+<!-- <script>
+  document.getElementById('loginButton').onclick = function() {
+  document.getElementById('loginModal').style.display = "block";
+  document.getElementById('LoginForm').classList.add('active');
+  document.getElementById('RegisterForm').classList.remove('active');
+};
+
+document.getElementById('closeModal').onclick = function() {
+  document.getElementById('loginModal').style.display = "none";
+};
+
+window.onclick = function(event) {
+  if (event.target == document.getElementById('loginModal')) {
+    document.getElementById('loginModal').style.display = "none";
+  }
+};
+
+document.querySelector('.register-link').addEventListener('click', function(event) {
+  event.preventDefault();
+  document.getElementById('LoginForm').classList.remove('active');
+  document.getElementById('RegisterForm').classList.add('active');
+});
+
+document.querySelector('.login-link').addEventListener('click', function(event) {
+  event.preventDefault();
+  document.getElementById('RegisterForm').classList.remove('active');
+  document.getElementById('LoginForm').classList.add('active');
+});
+</script> -->
+
+
+
+
+<!------------------- NAVBAR STICKY ---------------->
+<script>
+    // Kode JavaScript untuk membuat header tetap
+    const header = document.querySelector("header");
+    window.addEventListener("scroll", function() {
+      header.classList.toggle("sticky", window.scrollY > 60)
+    });
+  </script>
+
+
+
+
+<!------------------- HEAD SECTIION ---------------->
+<script>
+  function toggleReadMore(event) {
+      event.preventDefault();
+      var dots = document.getElementById("dots");
+      var moreText = document.querySelector(".more-content");
+      var readMoreLink = event.currentTarget;
+  
+      // Debugging statements
+      console.log("Dots display style:", dots.style.display);
+      console.log("More text display style:", moreText.style.display);
+      console.log("Read more link text:", readMoreLink.textContent);
+  
+      if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          readMoreLink.textContent = "Read More";
+          moreText.style.display = "none";
+      } else {
+          dots.style.display = "none";
+          readMoreLink.textContent = "Read Less";
+          moreText.style.display = "inline";
+      }
+  
+      // Additional debugging statements after the change
+      console.log("After click - Dots display style:", dots.style.display);
+      console.log("After click - More text display style:", moreText.style.display);
+      console.log("After click - Read more link text:", readMoreLink.textContent);
+  }
+  </script>
+
+
+
+
+  <!--------------------- GALLERY ---------------------->
+  <script>
+    // Ambil elemen galeri
+    var carousel = document.getElementById('carousel');
+    // Ambil daftar gambar di galeri
+    var images = carousel.getElementsByTagName('img');
+  
+    // Tambahkan event listener untuk setiap gambar
+    for (var i = 0; i < images.length; i++) {
+        images[i].addEventListener('click', function () {
+            openModal(this);
+        });
+    }
+  
+    // Ambil elemen modal
+    var modal = document.getElementById('myModal');
+    // Ambil elemen gambar di modal
+    var modalImg = document.getElementById('modal-img');
+  
+    // Fungsi untuk membuka modal saat gambar diklik
+    function openModal(image) {
+        modal.style.display = 'block'; // Tampilkan modal
+        modalImg.src = image.src; // Set gambar modal sesuai gambar yang diklik
+    }
+  
+    // Event listener untuk menutup modal saat tombol close diklik
+    var closeBtn = document.getElementsByClassName('close')[0];
+    closeBtn.onclick = function () {
+        modal.style.display = 'none'; // Sembunyikan modal saat close diklik
+    }
+  </script>
+
+<script>
+    const btn = document.querySelector("button");
+    const post = document.querySelector(".post");
+    const widget = document.querySelector(".star-widget");
+    const editBtn = document.querySelector(".edit");
+    btn.onclick = ()=>{
+    widget.style.display = "none";
+    post.style.display = "block";
+    editBtn.onclick = ()=>{
+    widget.style.display = "block";
+    post.style.display = "none";
+    }
+    return false;
+    }
+    </script>
+    
+  <script>
+    firstImg = carousel.querySelectorAll("img")[0],
+    arrowIcons = document.querySelectorAll(".wrapper i");
+    
+    let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
+    
+    const showHideIcons = () => {
+    // showing and hiding prev/next icon according to carousel scroll left value
+    let scrollWidth = carousel.scrollWidth - carousel.clientWidth; // getting max scrollable width
+    arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" : "block";
+    arrowIcons[1].style.display = carousel.scrollLeft == scrollWidth ? "none" : "block";
+    }
+    
+    arrowIcons.forEach(icon => {
+    icon.addEventListener("click", () => {
+    let firstImgWidth = firstImg.clientWidth + 14; // getting first img width & adding 14 margin value
+    // if clicked icon is left, reduce width value from the carousel scroll left else add to it
+    carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
+    setTimeout(() => showHideIcons(), 60); // calling showHideIcons after 60ms
+    });
+    });
+    
+    const autoSlide = () => {
+    // if there is no image left to scroll then return from here
+    if(carousel.scrollLeft - (carousel.scrollWidth - carousel.clientWidth) > -1 || carousel.scrollLeft <= 0) return;
+    
+    positionDiff = Math.abs(positionDiff); // making positionDiff value to positive
+    let firstImgWidth = firstImg.clientWidth + 14;
+    // getting difference value that needs to add or reduce from carousel left to take middle img center
+    let valDifference = firstImgWidth - positionDiff;
+    
+    if(carousel.scrollLeft > prevScrollLeft) { // if user is scrolling to the right
+    return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+    }
+    // if user is scrolling to the left
+    carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+    }
+    
+    const dragStart = (e) => {
+    // updatating global variables value on mouse down event
+    isDragStart = true;
+    prevPageX = e.pageX || e.touches[0].pageX;
+    prevScrollLeft = carousel.scrollLeft;
+    }
+    
+    const dragging = (e) => {
+    // scrolling images/carousel to left according to mouse pointer
+    if(!isDragStart) return;
+    e.preventDefault();
+    isDragging = true;
+    carousel.classList.add("dragging");
+    positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
+    carousel.scrollLeft = prevScrollLeft - positionDiff;
+    showHideIcons();
+    }
+    
+    const dragStop = () => {
+    isDragStart = false;
+    carousel.classList.remove("dragging");
+    
+    if(!isDragging) return;
+    isDragging = false;
+    autoSlide();
+    }
+    
+    carousel.addEventListener("mousedown", dragStart);
+    carousel.addEventListener("touchstart", dragStart);
+    
+    document.addEventListener("mousemove", dragging);
+    carousel.addEventListener("touchmove", dragging);
+    
+    document.addEventListener("mouseup", dragStop);
+    carousel.addEventListener("touchend", dragStop);
+    </script>
+
+
+<!------------------------ TESTIMONIAL -------------------------->
+<script>
+    $(document).ready(function(){
+    $('.testimonials-container').owlCarousel({
+    loop:true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    margin:10,
+    nav:true,
+    navText:["<i class='fa-solid fa-arrow-left'></i>",
+          "<i class='fa-solid fa-arrow-right'></i>"],
+    responsive:{
+    0:{
+      items:1,
+      nav:false
+    },
+    600:{
+      items:1,
+      nav:true
+    },
+    768:{
+      items:2
+    },
+    }
+    });
+    });
+    </script>
+</body>
+</html>
